@@ -24,7 +24,7 @@
 		</dd>
 		<dt><?php echo __('Date De Naissance'); ?></dt>
 		<dd>
-			<?php echo h($member['Member']['date_de_naissance']); ?>
+			<?php echo date('d-m-Y', strtotime($member['Member']['date_de_naissance'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Private Phone'); ?></dt>
@@ -64,7 +64,7 @@
 		</dd>
 		<dt><?php echo __('Entree Club'); ?></dt>
 		<dd>
-			<?php echo h($member['Member']['entree_club']); ?>
+			<?php echo date('d-m-Y', strtotime($member['Member']['entree_club'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Section'); ?></dt>
@@ -149,7 +149,7 @@
 		</dd>
 		<dt><?php echo __('Delai'); ?></dt>
 		<dd>
-			<?php echo h($member['Member']['delai']); ?>
+			<?php echo date('d-m-Y', strtotime($member['Member']['delai'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Avs'); ?></dt>

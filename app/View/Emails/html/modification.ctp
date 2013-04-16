@@ -11,7 +11,7 @@
         ?>
 </div>
 
-<h2>Nouvellles valeurs</h2>
+<h2>Nouvelles valeurs</h2>
 <?php
 foreach ($old_value as $key => $value) {
         echo "<b>" . $key . "</b> : ";

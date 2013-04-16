@@ -7,7 +7,6 @@
       <li><?php echo $this->Html->link(__('Notifications'), array('controller' => 'notifications','action' => 'index', 'admin'=>true));?></li>
       <li><?php echo $this->Html->link(__('Utilisateurs'), array('controller' => 'users','action' => 'index', 'admin'=>true));?></li>
       <li><?php echo $this->Html->link(__('Formulaires'), array('controller' => 'forms','action' => 'index', 'admin'=>true));?></li>
-      <li><?php echo $this->Html->link(__('Notifications'), array('controller' => 'notifications','action' => 'index', 'admin'=>true));?></li>
       <li><?php echo $this->Html->link(__('Contacts'), array('controller' => 'contacts', 'action' => 'index', 'admin'=>true));?></li>
       <li><?php echo $this->Html->link(__('Logout'), array('controller' => 'users', 'action'=>'logout', 'admin'=>false));?></li>
     </ul>
