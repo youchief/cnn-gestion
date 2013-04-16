@@ -1,0 +1,25 @@
+dt{
+        background: #f9f9f9;
+        border-bottom: 1px solid #ddd;
+        border-top: 1px solid #ddd;
+}
+
+body {
+	color:#333333;
+         background-color: #0071b1;
+}
+
+table {
+        color:#333;
+}
+
+
+
+.subscription{
+        background-color: white;
+}
+
+#header{
+        background: white url('../img/header.png') no-repeat;
+        height:150px;
+}

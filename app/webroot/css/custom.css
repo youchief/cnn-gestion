@@ -1,0 +1,23 @@
+dt{
+        background: #f9f9f9;
+        border-bottom: 1px solid #ddd;
+        border-top: 1px solid #ddd;
+}
+
+body {
+	color:#333333;
+}
+
+table {
+        color:#333;
+}
+
+
+
+.subscription-content{
+        background-color: #006dcc;
+}
+
+.subscription{
+        background-color: white;
+}

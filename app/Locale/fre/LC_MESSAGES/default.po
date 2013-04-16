@@ -1,0 +1,1510 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2012-06-04 11:13+0200\n"
+"PO-Revision-Date: 2012-06-04 12:17+0100\n"
+"Last-Translator: Cyril\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/ContactsController.php:33;108;136;164;197;225
+msgid "Invalid contact"
+msgstr ""
+
+#: Controller/ContactsController.php:47;112;178;201
+msgid "The contact has been saved"
+msgstr ""
+
+#: Controller/ContactsController.php:50;74;115;181;204
+msgid "The contact could not be saved. Please, try again."
+msgstr "Votre message ne peut pas être envoyé"
+
+#: Controller/ContactsController.php:69
+msgid "Merci pour votre message !"
+msgstr ""
+
+#: Controller/ContactsController.php:139;228
+msgid "Contact deleted"
+msgstr ""
+
+#: Controller/ContactsController.php:142;231
+msgid "Contact was not deleted"
+msgstr ""
+
+#: Controller/EntriesController.php:30;63;91
+msgid "Invalid entry"
+msgstr ""
+
+#: Controller/EntriesController.php:44;67
+msgid "The entry has been saved"
+msgstr ""
+
+#: Controller/EntriesController.php:47;70
+msgid "The entry could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/EntriesController.php:94
+msgid "Entry deleted"
+msgstr ""
+
+#: Controller/EntriesController.php:97
+msgid "Entry was not deleted"
+msgstr ""
+
+#: Controller/FieldsController.php:30;102;130
+msgid "Invalid field"
+msgstr ""
+
+#: Controller/FieldsController.php:49;76;106
+msgid "The field has been saved"
+msgstr "Le champ a été sauvé"
+
+#: Controller/FieldsController.php:52;86;109
+msgid "The field could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/FieldsController.php:133
+msgid "Field deleted"
+msgstr "Champ effacer"
+
+#: Controller/FieldsController.php:136
+msgid "Field was not deleted"
+msgstr ""
+
+#: Controller/FormsController.php:31;83;109
+msgid "Invalid form"
+msgstr ""
+
+#: Controller/FormsController.php:45;87
+msgid "The form has been saved"
+msgstr "Le formulaire a été sauvé"
+
+#: Controller/FormsController.php:48;90
+msgid "The form could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/FormsController.php:112
+msgid "Form deleted"
+msgstr ""
+
+#: Controller/FormsController.php:115
+msgid "Form was not deleted"
+msgstr ""
+
+#: Controller/GroupsController.php:30;61;87
+msgid "Invalid group"
+msgstr ""
+
+#: Controller/GroupsController.php:44;65
+msgid "The group has been saved"
+msgstr ""
+
+#: Controller/GroupsController.php:47;68
+msgid "The group could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/GroupsController.php:90
+msgid "Group deleted"
+msgstr ""
+
+#: Controller/GroupsController.php:93
+msgid "Group was not deleted"
+msgstr ""
+
+#: Controller/MembersController.php:57
+msgid "Vous avez passer les juniors en adulte"
+msgstr ""
+
+#: Controller/MembersController.php:79
+msgid "Vous avez validé les admissions"
+msgstr ""
+
+#: Controller/MembersController.php:92
+msgid "Vous avez effacer les démissions"
+msgstr ""
+
+#: Controller/MembersController.php:132;223;251;304;334
+msgid "Invalid member"
+msgstr ""
+
+#: Controller/MembersController.php:226;337
+msgid "Member deleted"
+msgstr ""
+
+#: Controller/MembersController.php:229;340
+msgid "Member was not deleted"
+msgstr ""
+
+#: Controller/MembersController.php:266;308
+msgid "The member has been saved"
+msgstr ""
+
+#: Controller/MembersController.php:270;312
+msgid "The member could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/NotificationsController.php:30;63;91
+msgid "Invalid notification"
+msgstr ""
+
+#: Controller/NotificationsController.php:44;67
+msgid "The notification has been saved"
+msgstr ""
+
+#: Controller/NotificationsController.php:47;70
+msgid "The notification could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/NotificationsController.php:94
+msgid "Notification deleted"
+msgstr ""
+
+#: Controller/NotificationsController.php:97
+msgid "Notification was not deleted"
+msgstr ""
+
+#: Controller/OptionsController.php:35;68;96
+msgid "Invalid option"
+msgstr ""
+
+#: Controller/OptionsController.php:49;72
+msgid "The option has been saved"
+msgstr ""
+
+#: Controller/OptionsController.php:52;75
+msgid "The option could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/OptionsController.php:99
+msgid "Option deleted"
+msgstr ""
+
+#: Controller/OptionsController.php:102
+msgid "Option was not deleted"
+msgstr ""
+
+#: Controller/SectionsController.php:36;67;93
+msgid "Invalid section"
+msgstr ""
+
+#: Controller/SectionsController.php:50;71
+msgid "The section has been saved"
+msgstr ""
+
+#: Controller/SectionsController.php:53;74
+msgid "The section could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/SectionsController.php:96
+msgid "Section deleted"
+msgstr ""
+
+#: Controller/SectionsController.php:99
+msgid "Section was not deleted"
+msgstr ""
+
+#: Controller/SubscriptionsController.php:31
+msgid "No subscription for the moment"
+msgstr ""
+
+#: Controller/SubscriptionsController.php:78
+msgid "The form subscription has been saved"
+msgstr "Nous vous remercions pour votre inscription qui a bien été prise en compte. Vous recevrez prochainement une confirmation ou des informations complémentaires de notre part. En cas de question, n’hésitez pas à nous contacter par le biais de l’adresse info@cnn-nyon.ch"
+
+#: Controller/SubscriptionsController.php:82
+msgid "The form subscription could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/SubscriptionsController.php:130;163;191
+msgid "Invalid subscription"
+msgstr ""
+
+#: Controller/SubscriptionsController.php:144;167
+msgid "The subscription has been saved"
+msgstr ""
+
+#: Controller/SubscriptionsController.php:147;170
+msgid "The subscription could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/SubscriptionsController.php:194
+msgid "Subscription deleted"
+msgstr ""
+
+#: Controller/SubscriptionsController.php:197
+msgid "Subscription was not deleted"
+msgstr ""
+
+#: Controller/UsersController.php:17
+msgid "Username or password is incorrect"
+msgstr ""
+
+#: Controller/UsersController.php:49;82;110
+msgid "Invalid user"
+msgstr ""
+
+#: Controller/UsersController.php:63;86
+msgid "The user has been saved"
+msgstr ""
+
+#: Controller/UsersController.php:66;89
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:113
+msgid "User deleted"
+msgstr ""
+
+#: Controller/UsersController.php:116
+msgid "User was not deleted"
+msgstr ""
+
+#: View/Contacts/admin_add.ctp:4
+msgid "Admin Add Contact"
+msgstr ""
+
+#: View/Contacts/admin_add.ctp:15
+#: View/Contacts/admin_edit.ctp:16
+#: View/Contacts/contact.ctp:21
+#: View/Contacts/subscription.ctp:31
+#: View/Elements/search.ctp:7
+#: View/Entries/admin_add.ctp:11
+#: View/Entries/admin_edit.ctp:12
+#: View/Fields/admin_add.ctp:15
+#: View/Fields/admin_add_form_field.ctp:14
+#: View/Fields/admin_edit.ctp:16
+#: View/Forms/admin_add.ctp:12
+#: View/Forms/admin_edit.ctp:13
+#: View/Groups/add.ctp:9
+#: View/Groups/edit.ctp:10
+#: View/Members/admin_add.ctp:55
+#: View/Members/admin_edit.ctp:55
+#: View/Members/admin_import.ctp:10
+#: View/Notifications/admin_add.ctp:10
+#: View/Notifications/admin_edit.ctp:11
+#: View/Options/admin_add.ctp:10
+#: View/Options/admin_edit.ctp:11
+#: View/Sections/admin_add.ctp:12
+#: View/Sections/admin_edit.ctp:13
+#: View/Subscriptions/admin_add.ctp:9
+#: View/Subscriptions/admin_edit.ctp:10
+#: View/Subscriptions/select.ctp:12
+#: View/Subscriptions/subscription.ctp:31
+#: View/Users/admin_add.ctp:11
+#: View/Users/admin_edit.ctp:12
+msgid "Submit"
+msgstr "Envoyer"
+
+#: View/Contacts/admin_add.ctp:18
+#: View/Contacts/admin_edit.ctp:19
+#: View/Contacts/admin_index.ctp:11;48
+#: View/Contacts/admin_view.ctp:52
+#: View/Entries/admin_add.ctp:14
+#: View/Entries/admin_edit.ctp:15
+#: View/Entries/admin_index.ctp:9;44
+#: View/Entries/admin_view.ctp:27
+#: View/Fields/admin_add.ctp:18
+#: View/Fields/admin_edit.ctp:19
+#: View/Fields/admin_index.ctp:12;50
+#: View/Fields/admin_view.ctp:42;57
+#: View/Forms/admin_add.ctp:15
+#: View/Forms/admin_edit.ctp:16
+#: View/Forms/admin_finish.ctp:2
+#: View/Forms/admin_index.ctp:10;44
+#: View/Forms/admin_view.ctp:31;55
+#: View/Groups/add.ctp:12
+#: View/Groups/edit.ctp:13
+#: View/Groups/index.ctp:7;38
+#: View/Groups/view.ctp:17
+#: View/Members/admin_add.ctp:58
+#: View/Members/admin_admission.ctp:17;58
+#: View/Members/admin_demission.ctp:17;58
+#: View/Members/admin_edit.ctp:58
+#: View/Members/admin_index.ctp:15
+#: View/Members/admin_jtoa.ctp:18;46
+#: View/Members/admin_view.ctp:192
+#: View/Members/index.ctp:11
+#: View/Members/view.ctp:92
+#: View/Notifications/admin_add.ctp:13
+#: View/Notifications/admin_edit.ctp:14
+#: View/Notifications/admin_index.ctp:8;42
+#: View/Notifications/admin_view.ctp:22
+#: View/Options/admin_add.ctp:13
+#: View/Options/admin_edit.ctp:14
+#: View/Options/admin_index.ctp:8;42
+#: View/Options/admin_view.ctp:22
+#: View/Sections/admin_add.ctp:15
+#: View/Sections/admin_edit.ctp:16
+#: View/Sections/admin_index.ctp:9;42
+#: View/Sections/admin_view.ctp:27;50
+#: View/Subscriptions/admin_add.ctp:12
+#: View/Subscriptions/admin_edit.ctp:13
+#: View/Subscriptions/admin_index.ctp:9;44
+#: View/Subscriptions/admin_index_by_form.ctp:36
+#: View/Subscriptions/admin_view.ctp:27;48
+#: View/Users/admin_add.ctp:14
+#: View/Users/admin_edit.ctp:15
+#: View/Users/admin_index.ctp:9;44
+#: View/Users/admin_view.ctp:27
+msgid "Actions"
+msgstr ""
+
+#: View/Contacts/admin_add.ctp:21
+#: View/Contacts/admin_view.ctp:56
+msgid "List Contacts"
+msgstr "Lister"
+
+#: View/Contacts/admin_edit.ctp:4
+msgid "Admin Edit Contact"
+msgstr "Edit"
+
+#: View/Contacts/admin_edit.ctp:22
+#: View/Contacts/admin_index.ctp:27
+#: View/Entries/admin_edit.ctp:18
+#: View/Entries/admin_index.ctp:23
+#: View/Fields/admin_edit.ctp:22
+#: View/Fields/admin_index.ctp:29
+#: View/Fields/admin_view.ctp:69
+#: View/Forms/admin_edit.ctp:18
+#: View/Forms/admin_index.ctp:23
+#: View/Forms/admin_view.ctp:46
+#: View/Groups/edit.ctp:16
+#: View/Groups/index.ctp:17
+#: View/Members/admin_admission.ctp:37
+#: View/Members/admin_demission.ctp:37
+#: View/Members/admin_edit.ctp:61
+#: View/Members/admin_index.ctp:33
+#: View/Members/admin_jtoa.ctp:39
+#: View/Notifications/admin_edit.ctp:17
+#: View/Notifications/admin_index.ctp:21
+#: View/Options/admin_edit.ctp:17
+#: View/Options/admin_index.ctp:21
+#: View/Sections/admin_edit.ctp:18
+#: View/Sections/admin_index.ctp:21
+#: View/Sections/admin_view.ctp:68
+#: View/Subscriptions/admin_edit.ctp:16
+#: View/Subscriptions/admin_index.ctp:23
+#: View/Subscriptions/admin_view.ctp:61
+#: View/Users/admin_edit.ctp:18
+#: View/Users/admin_index.ctp:23
+msgid "Delete"
+msgstr "Effacer"
+
+#: View/Contacts/admin_edit.ctp:22
+#: View/Contacts/admin_index.ctp:27
+#: View/Contacts/admin_view.ctp:55
+#: View/Entries/admin_edit.ctp:18
+#: View/Entries/admin_index.ctp:23
+#: View/Entries/admin_view.ctp:30
+#: View/Fields/admin_edit.ctp:22
+#: View/Fields/admin_index.ctp:29
+#: View/Fields/admin_view.ctp:45;69
+#: View/Forms/admin_edit.ctp:18
+#: View/Forms/admin_index.ctp:23
+#: View/Forms/admin_view.ctp:46;58
+#: View/Groups/edit.ctp:16
+#: View/Groups/index.ctp:17
+#: View/Groups/view.ctp:20
+#: View/Members/admin_admission.ctp:37
+#: View/Members/admin_demission.ctp:37
+#: View/Members/admin_edit.ctp:61
+#: View/Members/admin_index.ctp:33
+#: View/Members/admin_jtoa.ctp:39
+#: View/Members/admin_view.ctp:195
+#: View/Notifications/admin_edit.ctp:17
+#: View/Notifications/admin_index.ctp:21
+#: View/Notifications/admin_view.ctp:25
+#: View/Options/admin_edit.ctp:17
+#: View/Options/admin_index.ctp:21
+#: View/Options/admin_view.ctp:25
+#: View/Sections/admin_edit.ctp:18
+#: View/Sections/admin_index.ctp:21
+#: View/Sections/admin_view.ctp:31;68
+#: View/Subscriptions/admin_edit.ctp:16
+#: View/Subscriptions/admin_index.ctp:23
+#: View/Subscriptions/admin_view.ctp:30;61
+#: View/Users/admin_edit.ctp:18
+#: View/Users/admin_index.ctp:23
+#: View/Users/admin_view.ctp:30
+msgid "Are you sure you want to delete # %s?"
+msgstr ""
+
+#: View/Contacts/admin_index.ctp:2
+#: View/Elements/menu_admin.ctp:7
+msgid "Contacts"
+msgstr ""
+
+#: View/Contacts/admin_index.ctp:25
+#: View/Entries/admin_index.ctp:21
+#: View/Fields/admin_index.ctp:27
+#: View/Fields/admin_view.ctp:67
+#: View/Forms/admin_index.ctp:21
+#: View/Forms/admin_view.ctp:44
+#: View/Groups/index.ctp:15
+#: View/Members/admin_admission.ctp:35
+#: View/Members/admin_demission.ctp:35
+#: View/Members/admin_index.ctp:31
+#: View/Members/admin_jtoa.ctp:37
+#: View/Members/index.ctp:23
+#: View/Notifications/admin_index.ctp:19
+#: View/Options/admin_index.ctp:19
+#: View/Sections/admin_index.ctp:19
+#: View/Sections/admin_view.ctp:66
+#: View/Subscriptions/admin_index.ctp:21
+#: View/Subscriptions/admin_view.ctp:59
+#: View/Users/admin_index.ctp:21
+msgid "View"
+msgstr "Voir"
+
+#: View/Contacts/admin_index.ctp:26
+#: View/Entries/admin_index.ctp:22
+#: View/Fields/admin_index.ctp:28
+#: View/Fields/admin_view.ctp:68
+#: View/Forms/admin_index.ctp:22
+#: View/Forms/admin_view.ctp:45
+#: View/Groups/index.ctp:16
+#: View/Members/admin_admission.ctp:36
+#: View/Members/admin_demission.ctp:36
+#: View/Members/admin_index.ctp:32
+#: View/Members/admin_jtoa.ctp:38
+#: View/Notifications/admin_index.ctp:20
+#: View/Options/admin_index.ctp:20
+#: View/Sections/admin_index.ctp:20
+#: View/Sections/admin_view.ctp:67
+#: View/Subscriptions/admin_index.ctp:22
+#: View/Subscriptions/admin_view.ctp:60
+#: View/Users/admin_index.ctp:22
+msgid "Edit"
+msgstr "Editer"
+
+#: View/Contacts/admin_index.ctp:35
+#: View/Entries/admin_index.ctp:31
+#: View/Fields/admin_index.ctp:37
+#: View/Forms/admin_index.ctp:31
+#: View/Groups/index.ctp:25
+#: View/Members/admin_admission.ctp:45
+#: View/Members/admin_demission.ctp:45
+#: View/Members/admin_index.ctp:41
+#: View/Members/index.ctp:31
+#: View/Notifications/admin_index.ctp:29
+#: View/Options/admin_index.ctp:29
+#: View/Sections/admin_index.ctp:29
+#: View/Subscriptions/admin_index.ctp:31
+#: View/Subscriptions/admin_index_by_form.ctp:23
+#: View/Users/admin_index.ctp:31
+msgid "Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}"
+msgstr ""
+
+#: View/Contacts/admin_index.ctp:41
+#: View/Entries/admin_index.ctp:37
+#: View/Fields/admin_index.ctp:43
+#: View/Forms/admin_index.ctp:37
+#: View/Groups/index.ctp:31
+#: View/Members/admin_admission.ctp:51
+#: View/Members/admin_demission.ctp:51
+#: View/Members/admin_index.ctp:47
+#: View/Members/index.ctp:37
+#: View/Notifications/admin_index.ctp:35
+#: View/Options/admin_index.ctp:35
+#: View/Sections/admin_index.ctp:35
+#: View/Subscriptions/admin_index.ctp:37
+#: View/Subscriptions/admin_index_by_form.ctp:29
+#: View/Users/admin_index.ctp:37
+msgid "previous"
+msgstr "suivant"
+
+#: View/Contacts/admin_index.ctp:43
+#: View/Entries/admin_index.ctp:39
+#: View/Fields/admin_index.ctp:45
+#: View/Forms/admin_index.ctp:39
+#: View/Groups/index.ctp:33
+#: View/Members/admin_admission.ctp:53
+#: View/Members/admin_demission.ctp:53
+#: View/Members/admin_index.ctp:49
+#: View/Members/index.ctp:39
+#: View/Notifications/admin_index.ctp:37
+#: View/Options/admin_index.ctp:37
+#: View/Sections/admin_index.ctp:37
+#: View/Subscriptions/admin_index.ctp:39
+#: View/Subscriptions/admin_index_by_form.ctp:31
+#: View/Users/admin_index.ctp:39
+msgid "next"
+msgstr "précédent"
+
+#: View/Contacts/admin_index.ctp:50
+#: View/Contacts/admin_view.ctp:57
+msgid "New Contact"
+msgstr "Nouveau"
+
+#: View/Contacts/admin_view.ctp:2
+msgid "Contact"
+msgstr ""
+
+#: View/Contacts/admin_view.ctp:4
+#: View/Emails/html/ajout.ctp:6
+#: View/Emails/html/modification.ctp:7
+#: View/Entries/admin_view.ctp:4
+#: View/Fields/admin_view.ctp:4;54
+#: View/Forms/admin_view.ctp:25
+#: View/Groups/view.ctp:4
+#: View/Members/admin_view.ctp:4
+#: View/Notifications/admin_view.ctp:4
+#: View/Options/admin_view.ctp:4
+#: View/Sections/admin_view.ctp:4;41
+#: View/Subscriptions/admin_view.ctp:4;44
+#: View/Users/admin_view.ctp:4
+msgid "Id"
+msgstr ""
+
+#: View/Contacts/admin_view.ctp:9
+#: View/Sections/admin_view.ctp:42
+#: View/Subscriptions/admin_view.ctp:9
+msgid "Created"
+msgstr "Créé"
+
+#: View/Contacts/admin_view.ctp:14
+#: View/Emails/html/ajout.ctp:16
+#: View/Emails/html/modification.ctp:17
+#: View/Members/admin_view.ctp:14
+#: View/Members/view.ctp:9
+#: View/Sections/admin_view.ctp:45
+msgid "Prenom"
+msgstr "Prénom"
+
+#: View/Contacts/admin_view.ctp:19
+#: View/Emails/html/ajout.ctp:21
+#: View/Emails/html/modification.ctp:22
+#: View/Members/admin_view.ctp:19
+#: View/Members/view.ctp:14
+#: View/Sections/admin_view.ctp:9;46
+msgid "Nom"
+msgstr ""
+
+#: View/Contacts/admin_view.ctp:24
+#: View/Emails/html/ajout.ctp:66
+#: View/Emails/html/modification.ctp:67
+#: View/Members/admin_view.ctp:64
+#: View/Members/view.ctp:54
+#: View/Notifications/admin_view.ctp:9
+#: View/Sections/admin_view.ctp:19
+msgid "Email"
+msgstr ""
+
+#: View/Contacts/admin_view.ctp:29
+msgid "Telephone"
+msgstr "Téléphone"
+
+#: View/Contacts/admin_view.ctp:34
+msgid "Sujet"
+msgstr ""
+
+#: View/Contacts/admin_view.ctp:39
+msgid "Message"
+msgstr ""
+
+#: View/Contacts/admin_view.ctp:44
+#: View/Elements/menu_admin.ctp:3
+#: View/Sections/admin_index.ctp:2
+msgid "Sections"
+msgstr ""
+
+#: View/Contacts/admin_view.ctp:54
+msgid "Edit Contact"
+msgstr "Editer"
+
+#: View/Contacts/admin_view.ctp:55
+msgid "Delete Contact"
+msgstr "Effacer"
+
+#: View/Elements/menu_admin.ctp:2
+#: View/Sections/admin_view.ctp:37
+msgid "Membres"
+msgstr ""
+
+#: View/Elements/menu_admin.ctp:4
+#: View/Notifications/admin_index.ctp:2
+msgid "Notifications"
+msgstr ""
+
+#: View/Elements/menu_admin.ctp:5
+msgid "Utilisateurs"
+msgstr ""
+
+#: View/Elements/menu_admin.ctp:6
+msgid "Formulaires"
+msgstr ""
+
+#: View/Elements/menu_admin.ctp:8
+msgid "Logout"
+msgstr ""
+
+#: View/Elements/menu_members.ctp:2
+#: View/Users/admin_login.ctp:10
+msgid "Login"
+msgstr ""
+
+#: View/Elements/search.ctp:4
+msgid "Search"
+msgstr "Rechercher"
+
+#: View/Emails/html/ajout.ctp:4
+#: View/Emails/html/modification.ctp:5
+#: View/Members/admin_view.ctp:2
+#: View/Members/view.ctp:2
+msgid "Member"
+msgstr "Membre"
+
+#: View/Emails/html/ajout.ctp:11
+#: View/Emails/html/modification.ctp:12
+#: View/Members/admin_view.ctp:9
+#: View/Members/view.ctp:4
+#: View/Sections/admin_view.ctp:44
+msgid "Titre"
+msgstr ""
+
+#: View/Emails/html/ajout.ctp:26
+#: View/Emails/html/modification.ctp:27
+#: View/Members/admin_view.ctp:24
+msgid "Profession"
+msgstr ""
+
+#: View/Emails/html/ajout.ctp:31
+#: View/Emails/html/modification.ctp:32
+#: View/Members/admin_view.ctp:29
+#: View/Members/view.ctp:19
+#: View/Sections/admin_view.ctp:47
+msgid "Adresse"
+msgstr ""
+
+#: View/Emails/html/ajout.ctp:36
+#: View/Emails/html/modification.ctp:37
+#: View/Members/admin_view.ctp:34
+#: View/Members/view.ctp:24
+#: View/Sections/admin_view.ctp:48
+msgid "Npa"
+msgstr ""
+
+#: View/Emails/html/ajout.ctp:41
+#: View/Emails/html/modification.ctp:42
+#: View/Members/admin_view.ctp:39
+#: View/Members/view.ctp:29
+#: View/Sections/admin_view.ctp:49
+msgid "Ville"
+msgstr ""
+
+#: View/Emails/html/ajout.ctp:46
+#: View/Emails/html/modification.ctp:47
+#: View/Members/admin_view.ctp:44
+#: View/Members/view.ctp:34
+msgid "Date De Naissance"
+msgstr ""
+
+#: View/Emails/html/ajout.ctp:51
+#: View/Emails/html/modification.ctp:52
+#: View/Members/admin_view.ctp:49
+#: View/Members/view.ctp:39
+msgid "Private Phone"
+msgstr "Téléphone privé"
+
+#: View/Emails/html/ajout.ctp:56
+#: View/Emails/html/modification.ctp:57
+#: View/Members/admin_view.ctp:54
+#: View/Members/view.ctp:44
+msgid "Pro Phone"
+msgstr "Téléphone prof."
+
+#: View/Emails/html/ajout.ctp:61
+#: View/Emails/html/modification.ctp:62
+#: View/Members/admin_view.ctp:59
+#: View/Members/view.ctp:49
+msgid "Mobile Phone"
+msgstr "Natel"
+
+#: View/Emails/html/ajout.ctp:71
+#: View/Emails/html/modification.ctp:72
+#: View/Members/admin_view.ctp:79
+#: View/Members/view.ctp:59
+msgid "Sexe"
+msgstr ""
+
+#: View/Emails/html/ajout.ctp:76
+#: View/Emails/html/modification.ctp:77
+#: View/Members/admin_view.ctp:84
+#: View/Members/view.ctp:64
+msgid "Entree Club"
+msgstr ""
+
+#: View/Emails/html/ajout.ctp:81
+#: View/Emails/html/modification.ctp:82
+#: View/Members/admin_view.ctp:89
+#: View/Members/view.ctp:69
+#: View/Notifications/admin_view.ctp:14
+#: View/Sections/admin_view.ctp:2
+msgid "Section"
+msgstr ""
+
+#: View/Emails/html/ajout.ctp:86
+#: View/Emails/html/modification.ctp:87
+#: View/Members/admin_view.ctp:94
+#: View/Members/view.ctp:74
+msgid "Mbre Tri"
+msgstr ""
+
+#: View/Emails/html/ajout.ctp:91
+#: View/Emails/html/modification.ctp:92
+#: View/Members/admin_view.ctp:99
+#: View/Members/view.ctp:79
+msgid "Categorie"
+msgstr ""
+
+#: View/Emails/html/ajout.ctp:96
+#: View/Emails/html/modification.ctp:97
+#: View/Members/admin_view.ctp:104
+#: View/Members/view.ctp:84
+msgid "Groupe"
+msgstr ""
+
+#: View/Emails/html/ajout.ctp:101
+#: View/Emails/html/modification.ctp:102
+#: View/Members/admin_view.ctp:109
+msgid "Ct"
+msgstr ""
+
+#: View/Emails/html/ajout.ctp:106
+#: View/Emails/html/modification.ctp:107
+#: View/Members/admin_view.ctp:114
+msgid "Adm/demission"
+msgstr ""
+
+#: View/Emails/html/ajout.ctp:111
+#: View/Emails/html/modification.ctp:112
+#: View/Members/admin_view.ctp:119
+msgid "Arbitre"
+msgstr ""
+
+#: View/Emails/html/ajout.ctp:116
+#: View/Emails/html/modification.ctp:117
+#: View/Members/admin_view.ctp:124
+msgid "Licence"
+msgstr ""
+
+#: View/Emails/html/ajout.ctp:121
+#: View/Emails/html/modification.ctp:122
+#: View/Members/admin_view.ctp:129
+msgid "Status"
+msgstr ""
+
+#: View/Emails/html/ajout.ctp:126
+#: View/Emails/html/modification.ctp:127
+#: View/Members/admin_view.ctp:134
+msgid "Comite"
+msgstr "Comité"
+
+#: View/Emails/html/ajout.ctp:131
+#: View/Emails/html/modification.ctp:132
+#: View/Members/admin_view.ctp:139
+msgid "Ancien Comite"
+msgstr ""
+
+#: View/Emails/html/ajout.ctp:136
+#: View/Emails/html/modification.ctp:137
+#: View/Members/admin_view.ctp:144
+msgid "En Conge"
+msgstr ""
+
+#: View/Emails/html/ajout.ctp:141
+#: View/Emails/html/modification.ctp:142
+#: View/Members/admin_view.ctp:149
+msgid "Moniteur"
+msgstr ""
+
+#: View/Emails/html/ajout.ctp:146
+#: View/Emails/html/modification.ctp:147
+#: View/Members/admin_view.ctp:154
+msgid "Entraineur"
+msgstr ""
+
+#: View/Emails/html/ajout.ctp:151
+#: View/Emails/html/modification.ctp:152
+#: View/Members/admin_view.ctp:159
+msgid "En Test"
+msgstr ""
+
+#: View/Emails/html/ajout.ctp:156
+#: View/Emails/html/modification.ctp:157
+#: View/Members/admin_view.ctp:164
+msgid "Sans Cotisation"
+msgstr ""
+
+#: View/Emails/html/ajout.ctp:161
+#: View/Emails/html/modification.ctp:162
+#: View/Members/admin_view.ctp:169
+msgid "Delai"
+msgstr ""
+
+#: View/Emails/html/ajout.ctp:166
+#: View/Emails/html/modification.ctp:167
+msgid "Bus"
+msgstr ""
+
+#: View/Emails/html/ajout.ctp:171
+#: View/Emails/html/modification.ctp:172
+#: View/Members/admin_view.ctp:174
+msgid "Avs"
+msgstr ""
+
+#: View/Emails/html/ajout.ctp:176
+#: View/Emails/html/modification.ctp:177
+#: View/Members/admin_view.ctp:179
+msgid "SSS"
+msgstr ""
+
+#: View/Emails/html/ajout.ctp:181
+#: View/Emails/html/modification.ctp:182
+#: View/Members/admin_view.ctp:184
+msgid "JS"
+msgstr ""
+
+#: View/Entries/admin_add.ctp:4
+msgid "Admin Add Entry"
+msgstr "Ajouter une entrée"
+
+#: View/Entries/admin_add.ctp:17
+#: View/Entries/admin_edit.ctp:19
+#: View/Entries/admin_view.ctp:31
+#: View/Subscriptions/admin_add.ctp:18
+#: View/Subscriptions/admin_edit.ctp:20
+#: View/Subscriptions/admin_index.ctp:49
+#: View/Subscriptions/admin_view.ctp:35
+msgid "List Entries"
+msgstr "Lister les entrées"
+
+#: View/Entries/admin_add.ctp:18
+#: View/Entries/admin_edit.ctp:20
+#: View/Entries/admin_index.ctp:47
+#: View/Entries/admin_view.ctp:33
+#: View/Forms/admin_view.ctp:61
+#: View/Subscriptions/admin_add.ctp:15
+#: View/Subscriptions/admin_edit.ctp:17
+#: View/Subscriptions/admin_view.ctp:31
+msgid "List Subscriptions"
+msgstr "Lister les inscriptions"
+
+#: View/Entries/admin_add.ctp:19
+#: View/Entries/admin_edit.ctp:21
+#: View/Entries/admin_index.ctp:48
+#: View/Entries/admin_view.ctp:34
+#: View/Subscriptions/admin_index.ctp:46
+#: View/Subscriptions/admin_view.ctp:32
+msgid "New Subscription"
+msgstr "Nouvelle inscription"
+
+#: View/Entries/admin_edit.ctp:4
+msgid "Admin Edit Entry"
+msgstr "Editer un champ"
+
+#: View/Entries/admin_index.ctp:2
+msgid "Entries"
+msgstr ""
+
+#: View/Entries/admin_index.ctp:46
+#: View/Entries/admin_view.ctp:32
+#: View/Subscriptions/admin_add.ctp:19
+#: View/Subscriptions/admin_edit.ctp:21
+#: View/Subscriptions/admin_index.ctp:50
+#: View/Subscriptions/admin_view.ctp:36;70
+msgid "New Entry"
+msgstr "Nouvelle entrée"
+
+#: View/Entries/admin_view.ctp:2
+msgid "Entry"
+msgstr "Valeur"
+
+#: View/Entries/admin_view.ctp:9
+#: View/Subscriptions/admin_view.ctp:45
+msgid "Key"
+msgstr "Clé"
+
+#: View/Entries/admin_view.ctp:14
+#: View/Fields/admin_view.ctp:55
+#: View/Options/admin_view.ctp:9
+#: View/Subscriptions/admin_view.ctp:46
+msgid "Value"
+msgstr ""
+
+#: View/Entries/admin_view.ctp:19
+#: View/Subscriptions/admin_view.ctp:2
+msgid "Subscription"
+msgstr "Inscription"
+
+#: View/Entries/admin_view.ctp:29
+msgid "Edit Entry"
+msgstr "Editer entrée"
+
+#: View/Entries/admin_view.ctp:30
+msgid "Delete Entry"
+msgstr "Effacer entrée"
+
+#: View/Fields/admin_add.ctp:4
+#: View/Fields/admin_add_form_field.ctp:4
+msgid "Admin Add Field"
+msgstr "Ajouter un champ"
+
+#: View/Fields/admin_add.ctp:9
+#: View/Fields/admin_add_form_field.ctp:9
+#: View/Fields/admin_edit.ctp:10
+msgid "For select and multiple choice only ! Separate with choices with \",\" "
+msgstr "Pour les choix multiple et select uniquement ! Séparer les options avec une virgule"
+
+#: View/Fields/admin_add.ctp:21
+#: View/Fields/admin_edit.ctp:23
+#: View/Fields/admin_view.ctp:46
+#: View/Options/admin_add.ctp:17
+#: View/Options/admin_edit.ctp:19
+#: View/Options/admin_index.ctp:45
+#: View/Options/admin_view.ctp:28
+msgid "List Fields"
+msgstr "Lister les champs"
+
+#: View/Fields/admin_edit.ctp:4
+msgid "Admin Edit Field"
+msgstr "Editer un champ"
+
+#: View/Fields/admin_index.ctp:2
+msgid "Fields"
+msgstr "Champs"
+
+#: View/Fields/admin_index.ctp:52
+#: View/Forms/admin_view.ctp:59
+#: View/Options/admin_add.ctp:18
+#: View/Options/admin_edit.ctp:20
+#: View/Options/admin_index.ctp:46
+#: View/Options/admin_view.ctp:29
+msgid "New Field"
+msgstr "Nouveau champ"
+
+#: View/Fields/admin_index.ctp:53
+#: View/Forms/admin_add.ctp:17
+#: View/Forms/admin_edit.ctp:19
+#: View/Subscriptions/admin_add.ctp:16
+#: View/Subscriptions/admin_edit.ctp:18
+#: View/Subscriptions/admin_index.ctp:47
+#: View/Subscriptions/admin_index_by_form.ctp:38
+#: View/Subscriptions/admin_view.ctp:33
+msgid "List Forms"
+msgstr "Lister les formualires"
+
+#: View/Fields/admin_view.ctp:2
+#: View/Options/admin_view.ctp:14
+msgid "Field"
+msgstr "Champ"
+
+#: View/Fields/admin_view.ctp:9
+#: View/Forms/admin_view.ctp:26
+msgid "Label"
+msgstr "Libélé"
+
+#: View/Fields/admin_view.ctp:14
+#: View/Forms/admin_view.ctp:27
+msgid "Help Text"
+msgstr "Texte d'aide"
+
+#: View/Fields/admin_view.ctp:19
+#: View/Forms/admin_view.ctp:28
+msgid "Type"
+msgstr ""
+
+#: View/Fields/admin_view.ctp:24
+#: View/Forms/admin_view.ctp:29
+msgid "Require"
+msgstr "Requis"
+
+#: View/Fields/admin_view.ctp:29
+#: View/Forms/admin_view.ctp:30
+msgid "Class"
+msgstr ""
+
+#: View/Fields/admin_view.ctp:34
+#: View/Subscriptions/admin_view.ctp:19
+msgid "Form"
+msgstr "Formulaire"
+
+#: View/Fields/admin_view.ctp:44
+msgid "Edit Field"
+msgstr "Editer le champ"
+
+#: View/Fields/admin_view.ctp:45
+#, fuzzy
+msgid "Delete Field"
+msgstr "Effacer"
+
+#: View/Fields/admin_view.ctp:50
+msgid "Related Options"
+msgstr "Options relatives"
+
+#: View/Fields/admin_view.ctp:56
+msgid "Field Id"
+msgstr ""
+
+#: View/Fields/admin_view.ctp:78
+#: View/Options/admin_index.ctp:44
+#: View/Options/admin_view.ctp:27
+#, fuzzy
+msgid "New Option"
+msgstr "Ajouter"
+
+#: View/Forms/admin_add.ctp:4
+msgid "Admin Add Form"
+msgstr "Ajouter un formulaire"
+
+#: View/Forms/admin_edit.ctp:4
+msgid "Admin Edit Form"
+msgstr "Editer formulaire"
+
+#: View/Forms/admin_finish.ctp:4
+msgid "Add field"
+msgstr "Ajouter un champ"
+
+#: View/Forms/admin_finish.ctp:5
+msgid "Finish"
+msgstr "Terminé"
+
+#: View/Forms/admin_get_public_link.ctp:1
+msgid "Public link for"
+msgstr "Lien public pour"
+
+#: View/Forms/admin_get_public_link.ctp:3
+msgid "Copy paste this for a popup subscription"
+msgstr "Copier/coller le code ci-dessous dans votre page HTML pour une inscription type popup"
+
+#: View/Forms/admin_get_public_link.ctp:14
+msgid "Copy paste this for a new page subscription"
+msgstr "Copier/coller le code ci-dessous dans votre page HTML pour une inscription type nouvelle page"
+
+#: View/Forms/admin_index.ctp:2
+msgid "Forms"
+msgstr "Formulaires"
+
+#: View/Forms/admin_index.ctp:46
+#: View/Subscriptions/admin_add.ctp:17
+#: View/Subscriptions/admin_edit.ctp:19
+#: View/Subscriptions/admin_index.ctp:48
+#: View/Subscriptions/admin_view.ctp:34
+msgid "New Form"
+msgstr "Nouveau formulaire"
+
+#: View/Forms/admin_view.ctp:4
+msgid "Contact Email"
+msgstr "Email de contact"
+
+#: View/Forms/admin_view.ctp:9
+msgid "Notify"
+msgstr "Notifié"
+
+#: View/Forms/admin_view.ctp:14
+msgid "Captcha"
+msgstr ""
+
+#: View/Forms/admin_view.ctp:21
+msgid "Related Fields"
+msgstr "Champs du formulaire"
+
+#: View/Forms/admin_view.ctp:57
+msgid "Edit Form"
+msgstr "Editer le formualire"
+
+#: View/Forms/admin_view.ctp:58
+msgid "Delete Form"
+msgstr "Effacer formulaire"
+
+#: View/Forms/admin_view.ctp:60
+msgid "Get Public Link"
+msgstr "Obtenir le lien public"
+
+#: View/Groups/add.ctp:4
+msgid "Add Group"
+msgstr ""
+
+#: View/Groups/add.ctp:15
+#: View/Groups/edit.ctp:17
+#: View/Groups/view.ctp:21
+msgid "List Groups"
+msgstr ""
+
+#: View/Groups/edit.ctp:4
+#: View/Groups/view.ctp:19
+msgid "Edit Group"
+msgstr ""
+
+#: View/Groups/index.ctp:2
+msgid "Groups"
+msgstr "Groupes"
+
+#: View/Groups/index.ctp:40
+#: View/Groups/view.ctp:22
+msgid "New Group"
+msgstr ""
+
+#: View/Groups/view.ctp:2
+#: View/Users/admin_view.ctp:19
+msgid "Group"
+msgstr ""
+
+#: View/Groups/view.ctp:9
+msgid "Name"
+msgstr "Nom"
+
+#: View/Groups/view.ctp:20
+msgid "Delete Group"
+msgstr ""
+
+#: View/Members/admin_add.ctp:11
+msgid "Admin Add Member"
+msgstr "Ajouter"
+
+#: View/Members/admin_add.ctp:61
+#: View/Members/admin_edit.ctp:62
+#: View/Members/admin_view.ctp:196
+msgid "List Members"
+msgstr "Lister"
+
+#: View/Members/admin_admission.ctp:2
+#: View/Members/admin_demission.ctp:2
+#: View/Members/admin_index.ctp:2
+#: View/Members/admin_jtoa.ctp:2
+#: View/Members/index.ctp:2
+msgid "Members"
+msgstr "Membres"
+
+#: View/Members/admin_admission.ctp:60
+msgid "Valider"
+msgstr ""
+
+#: View/Members/admin_admission.ctp:60
+msgid "Etes vous sur de valider les admissions ?"
+msgstr ""
+
+#: View/Members/admin_demission.ctp:60
+msgid "Effacer"
+msgstr ""
+
+#: View/Members/admin_demission.ctp:60
+msgid "Etes vous sur d effacer les démissions ?"
+msgstr ""
+
+#: View/Members/admin_edit.ctp:11
+msgid "Admin Edit Member"
+msgstr ""
+
+#: View/Members/admin_import.ctp:4
+msgid "Add CSV File"
+msgstr ""
+
+#: View/Members/admin_index.ctp:56
+msgid "Ajouter Membre"
+msgstr ""
+
+#: View/Members/admin_index.ctp:57
+#: View/Sections/admin_view.ctp:30
+msgid "Exporter"
+msgstr ""
+
+#: View/Members/admin_index.ctp:59
+msgid "Junior vers Adulte"
+msgstr ""
+
+#: View/Members/admin_index.ctp:60
+msgid "Admission"
+msgstr ""
+
+#: View/Members/admin_index.ctp:61
+msgid "Démission"
+msgstr ""
+
+#: View/Members/admin_jtoa.ctp:48
+msgid "Passer de J vers A"
+msgstr ""
+
+#: View/Members/admin_jtoa.ctp:48
+msgid "Etes vous sur de vouloir passer les juniors vers adultes ?"
+msgstr ""
+
+#: View/Members/admin_view.ctp:69
+msgid "Email 2"
+msgstr ""
+
+#: View/Members/admin_view.ctp:74
+msgid "Email 3"
+msgstr ""
+
+#: View/Members/admin_view.ctp:194
+msgid "Edit Member"
+msgstr ""
+
+#: View/Members/admin_view.ctp:195
+msgid "Delete Member"
+msgstr ""
+
+#: View/Members/admin_view.ctp:197
+msgid "New Member"
+msgstr ""
+
+#: View/Members/view.ctp:94
+msgid "Liste"
+msgstr ""
+
+#: View/Notifications/admin_add.ctp:4
+msgid "Admin Add Notification"
+msgstr "Ajouter"
+
+#: View/Notifications/admin_add.ctp:16
+#: View/Notifications/admin_edit.ctp:18
+#: View/Notifications/admin_view.ctp:26
+msgid "List Notifications"
+msgstr "Lister"
+
+#: View/Notifications/admin_edit.ctp:4
+msgid "Admin Edit Notification"
+msgstr "Editer"
+
+#: View/Notifications/admin_index.ctp:44
+#: View/Notifications/admin_view.ctp:27
+msgid "New Notification"
+msgstr "Nouveau"
+
+#: View/Notifications/admin_view.ctp:2
+msgid "Notification"
+msgstr ""
+
+#: View/Notifications/admin_view.ctp:24
+msgid "Edit Notification"
+msgstr "Editer"
+
+#: View/Notifications/admin_view.ctp:25
+msgid "Delete Notification"
+msgstr "Effacer"
+
+#: View/Options/admin_add.ctp:4
+#, fuzzy
+msgid "Admin Add Option"
+msgstr "Ajouter"
+
+#: View/Options/admin_add.ctp:16
+#: View/Options/admin_edit.ctp:18
+#: View/Options/admin_view.ctp:26
+#, fuzzy
+msgid "List Options"
+msgstr "Lister"
+
+#: View/Options/admin_edit.ctp:4
+#, fuzzy
+msgid "Admin Edit Option"
+msgstr "Editer"
+
+#: View/Options/admin_index.ctp:2
+msgid "Options"
+msgstr ""
+
+#: View/Options/admin_view.ctp:2
+msgid "Option"
+msgstr ""
+
+#: View/Options/admin_view.ctp:24
+#, fuzzy
+msgid "Edit Option"
+msgstr "Editer"
+
+#: View/Options/admin_view.ctp:25
+#, fuzzy
+msgid "Delete Option"
+msgstr "Effacer"
+
+#: View/Sections/admin_add.ctp:4
+msgid "Admin Add Section"
+msgstr "Ajouter"
+
+#: View/Sections/admin_add.ctp:18
+#: View/Sections/admin_view.ctp:32
+msgid "List Sections"
+msgstr "Lister"
+
+#: View/Sections/admin_edit.ctp:4
+msgid "Admin Edit Section"
+msgstr "Editer"
+
+#: View/Sections/admin_index.ctp:44
+msgid "Nouvelle Section"
+msgstr ""
+
+#: View/Sections/admin_view.ctp:14
+msgid "Nom Court"
+msgstr ""
+
+#: View/Sections/admin_view.ctp:29
+msgid "Edit Section"
+msgstr ""
+
+#: View/Sections/admin_view.ctp:31
+msgid "Delete Section"
+msgstr "Effacer"
+
+#: View/Sections/admin_view.ctp:33
+msgid "New Section"
+msgstr "Ajouter"
+
+#: View/Sections/admin_view.ctp:43
+#: View/Subscriptions/admin_view.ctp:14
+msgid "Modified"
+msgstr ""
+
+#: View/Subscriptions/admin_add.ctp:4
+#, fuzzy
+msgid "Admin Add Subscription"
+msgstr "Ajouter"
+
+#: View/Subscriptions/admin_edit.ctp:4
+#, fuzzy
+msgid "Admin Edit Subscription"
+msgstr "Editer"
+
+#: View/Subscriptions/admin_export.ctp:8
+#: View/Subscriptions/admin_index_by_form.ctp:2
+msgid "Subscriptions for"
+msgstr "Inscriptions pour"
+
+#: View/Subscriptions/admin_index.ctp:2
+msgid "Subscriptions"
+msgstr "Inscriptions"
+
+#: View/Subscriptions/admin_index_by_form.ctp:39
+msgid "Export XLS"
+msgstr ""
+
+#: View/Subscriptions/admin_view.ctp:29
+#, fuzzy
+msgid "Edit Subscription"
+msgstr "Editer"
+
+#: View/Subscriptions/admin_view.ctp:30
+#, fuzzy
+msgid "Delete Subscription"
+msgstr "Effacer"
+
+#: View/Subscriptions/admin_view.ctp:40
+msgid "Related Entries"
+msgstr "Entrées relatives"
+
+#: View/Subscriptions/admin_view.ctp:47
+msgid "Subscription Id"
+msgstr ""
+
+#: View/Subscriptions/select.ctp:7
+msgid "Select"
+msgstr "Sélectionner"
+
+#: View/Users/admin_add.ctp:4
+msgid "Admin Add User"
+msgstr ""
+
+#: View/Users/admin_add.ctp:17
+#: View/Users/admin_edit.ctp:19
+#: View/Users/admin_view.ctp:31
+msgid "List Users"
+msgstr "Lister"
+
+#: View/Users/admin_edit.ctp:4
+msgid "Admin Edit User"
+msgstr ""
+
+#: View/Users/admin_index.ctp:2
+msgid "Users"
+msgstr "Utilisateurs"
+
+#: View/Users/admin_index.ctp:46
+msgid "New User"
+msgstr "Nouveau"
+
+#: View/Users/admin_login.ctp:4
+msgid "Please enter your username and password"
+msgstr ""
+
+#: View/Users/admin_view.ctp:2
+msgid "User"
+msgstr "Utilisteur"
+
+#: View/Users/admin_view.ctp:9
+msgid "Username"
+msgstr ""
+
+#: View/Users/admin_view.ctp:14
+msgid "Password"
+msgstr ""
+
+#: View/Users/admin_view.ctp:29
+msgid "Edit User"
+msgstr "Editer"
+
+#: View/Users/admin_view.ctp:30
+msgid "Delete User"
+msgstr "Effacer"
+
+#: /Users/cyril/Sites/cnn-gestion/app/Model/Contact.php:validation
+#: for field
+#: prenom;validation nom;validation email;validation sujet;validation
+#: section_id
+msgid "Ce champ ne peut pas être vide"
+msgstr ""
+
+#: /Users/cyril/Sites/cnn-gestion/app/Model/Entry.php:validation
+#: for field
+#: key;validation value
+#: /Users/cyril/Sites/cnn-gestion/app/Model/Field.php:validation
+#: label;validation type
+#: /Users/cyril/Sites/cnn-gestion/app/Model/Form.php:validation
+#: name
+#: /Users/cyril/Sites/cnn-gestion/app/Model/Group.php:validation
+#: /Users/cyril/Sites/cnn-gestion/app/Model/Member.php:validation
+#: prenom;validation nom
+#: /Users/cyril/Sites/cnn-gestion/app/Model/Section.php:validation
+#: /Users/cyril/Sites/cnn-gestion/app/Model/User.php:validation
+#: password
+msgid "notempty"
+msgstr "Ce champ ne peut pas être vide"
+
+#: /Users/cyril/Sites/cnn-gestion/app/Model/Entry.php:validation
+#: for field
+#: subscription_id
+#: /Users/cyril/Sites/cnn-gestion/app/Model/Field.php:validation
+#: form_id
+#: /Users/cyril/Sites/cnn-gestion/app/Model/Notification.php:validation
+#: section_id /Users/cyril/Sites/cnn-gestion/app/Model/Option.php:validation
+#: field_id
+#: /Users/cyril/Sites/cnn-gestion/app/Model/Subscription.php:validation
+#: /Users/cyril/Sites/cnn-gestion/app/Model/User.php:validation
+#: group_id
+msgid "numeric"
+msgstr "Ce champ doit être numérique"
+
+#: /Users/cyril/Sites/cnn-gestion/app/Model/Notification.php:validation
+#: for
+#: field email /Users/cyril/Sites/cnn-gestion/app/Model/Section.php:validation
+msgid "email"
+msgstr ""
+
+#: /Users/cyril/Sites/cnn-gestion/app/Model/User.php:validation
+#: for field
+#: username
+msgid "Ce nom d'utilisateur a déjà été choisi."
+msgstr ""
+
+#~ msgid "June"
+#~ msgstr "Juin"
+
+#~ msgid "January"
+#~ msgstr "Janvier"
