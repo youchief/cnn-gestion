@@ -48,6 +48,7 @@ cObj.value=cObj.value.toUpperCase();
 		echo $this->Form->input('avs');
 		echo $this->Form->input('sss');
 		echo $this->Form->input('js');
+                                echo $this->Form->input('comment', array('label'=>'Commentaires'));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit'));?>

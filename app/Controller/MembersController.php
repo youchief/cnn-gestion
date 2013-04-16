@@ -325,7 +325,7 @@ class MembersController extends AppController {
                 $email->emailFormat('html');
                 $email->to($emails);
                 $email->subject($subject);
-                $email->viewVars(array('member' => $membre,
+                $email->viewVars(array('member' => $membre['Member'],
                     'user' => $user));
                 $email->send();
         }
@@ -335,6 +335,9 @@ class MembersController extends AppController {
                 $emails = $this->Member->Section->Notification->find('list', array('conditions' => array('Notification.section_id' => $section_id)));
                 $membre = $this->Member->findById($member_id);
                 $diff = array_diff($old_value['Member'], $membre['Member']);
+                
+                
+                
                 $user = $this->User->findById($user_id);
                 $email = new CakeEmail();
                 $email->from(array('admin@cnn-nyon.ch' => 'Gestion des membres CNN'));
@@ -349,6 +352,7 @@ class MembersController extends AppController {
                     'old_value' => $membre['Member']));
                 // $email->transport();
                 $email->send();
+              
         }
 
         /**
