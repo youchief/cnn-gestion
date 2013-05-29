@@ -4,7 +4,6 @@
                 cObj.value=cObj.value.toUpperCase();
         }
 </script>
-
 <div class="members form">
         <?php echo $this->Form->create('Member'); ?>
         <fieldset>
@@ -31,10 +30,10 @@
                 echo $this->Form->input('sexe', array('type' => 'select', 'options' => array('' => '-', 'F' => 'F', 'H' => 'H')));
                 echo $this->Form->input('entree_club', array('dateFormat' => 'DMY'));
                 echo $this->Form->input('section_id');
-                echo $this->Form->input('groupe', array('type' => 'select', 'options' => array('' => '-', 'TRIAdulte' => 'TRIAdulte', 'TRI-Ecole' => 'TRI-Ecole', 'WP-Equ1' => 'WP-Equ1', 'WP-Equ2' => 'WP-Equ2', 'WP-U20' => 'WP-U20', 'WP-U17' => 'WP-U17', 'WP-U15' => 'WP-U15', 'WP-Ecole' => 'WP-Ecole', 'WPEquFille' => 'WPEquFille', 'NAT-Kids1' => 'NAT-Kids1', 'NAT-Kids2' => 'NAT-Kids2', 'NAT-Futura' => 'NAT-Futura', 'NAT-C1' => 'NAT-C1', 'NAT-C2' => 'NAT-C2', 'NAT-C3' => 'NAT-C3', 'NAT-Master' => 'NAT-Master')));
+                echo $this->Form->input('groupe', array('type'=>'select', 'options'=>array('' => '-','TRI-Adulte'=>'TRI-Adulte', 'TRI-Ecole'=>'TRI-Ecole', 'WP-Equ1'=>'WP-Equ1' , 'WP-Equ2'=>'WP-Equ2', 'WP-U20' => 'WP-U20', 'WP-U17' =>'WP-U17', 'WP-U15' =>'WP-U15', 'WP-Ecole' =>'WP-Ecole', 'WP-EquFille' =>'WP-EquFille', 'NAT-Kids1' =>'NAT-Kids1', 'NAT-Kids2' =>'NAT-Kids2', 'NAT-Futura' =>'NAT-Futura', 'NAT-C1' =>'NAT-C1', 'NAT-C2' =>'NAT-C2', 'NAT-C3' =>'NAT-C3', 'NAT-Master' =>'NAT-Master')));
                 echo $this->Form->input('niveau_natation', array('type' => 'select', 'options' => array('' => '-', 'Evolution' => 'Evolution', 'Intermédiaire' => 'Intermédiaire', 'Performance' => 'Performance', 'Golden League' => 'Golden League')));
                 echo $this->Form->input('ct', array('type' => 'select', 'options' => array('' => '-', 'Nat' => 'Nat', 'Tri' => 'Tri', 'Wp' => 'Wp')));
-                echo $this->Form->input('adm/demission', array('type' => 'select', 'options' => array('' => '-', 'Y' => 'Y', 'Z' => 'Z')));
+                echo $this->Form->input('adm_demission', array('type' => 'select', 'options' => array('' => '-', 'Y' => 'Y', 'Z' => 'Z')));
                 echo $this->Form->input('arbitre', array('type' => 'select', 'options' => array('' => '-', 'Nat' => 'Nat', 'Tri' => 'Tri', 'Wp' => 'Wp')));
                 echo $this->Form->input('licence');
                 echo $this->Form->input('status', array('type' => 'select', 'options' => array('' => '-', 'A' => 'A', 'H' => 'H', 'J' => 'J', 'P' => 'P', 'MON' => 'MON', 'PR' => 'PR')));

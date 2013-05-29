@@ -88,7 +88,7 @@
 			echo '<td class="tableTdContent">'.$row['Member']['categorie'].'</td>';
 			echo '<td class="tableTdContent">'.$row['Member']['groupe'].'</td>';
 			echo '<td class="tableTdContent">'.$row['Member']['ct'].'</td>';
-			echo '<td class="tableTdContent">'.$row['Member']['adm/demission'].'</td>';
+			echo '<td class="tableTdContent">'.$row['Member']['adm_demission'].'</td>';
 			echo '<td class="tableTdContent">'.$row['Member']['arbitre'].'</td>';
 			echo '<td class="tableTdContent">'.$row['Member']['licence'].'</td>';
 			echo '<td class="tableTdContent">'.$row['Member']['status'].'</td>';

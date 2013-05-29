@@ -11,6 +11,8 @@ class Member extends AppModel {
  * @var string
  */
 	public $displayField = 'nom';
+                public $order = 'Member.nom ASC';
+               
 /**
  * Validation rules
  *

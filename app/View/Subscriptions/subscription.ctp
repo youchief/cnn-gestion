@@ -5,6 +5,7 @@ $this->layout = 'subscription';
         <?php echo $this->Form->create('Subscription'); ?>
         <fieldset>
                 <h1><?php echo $form['Form']['name'] ?></h1>
+                <h3><?php echo $form['Form']['sub_title']; ?> </h3>
                 <?php
                 foreach ($form['Field'] as $field) {
                         echo "<div class='input_form'>";

@@ -1,7 +1,23 @@
 <div class="members view">
-        <h2><?php echo h($member['Member']['titre']); ?> <?php echo h($member['Member']['nom']); ?> <?php echo h($member['Member']['prenom']); ?></h2>
+        <h2><?php echo h($member['Member']['titre']); ?> <?php echo h($member['Member']['nom']); ?> <?php echo h($member['Member']['prenom']); ?>
+        <div class="btn-group">
+                        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                Actions
+                                <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                                <li><?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $member['Member']['id'])); ?></li>
+                                 <li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $member['Member']['id']), null, __('Are you sure you want to delete # %s?', $member['Member']['id'])); ?></li>
+                                
+                        </ul>
+                </div>
+        </h2>
         <dl>
-
+                <dt><?php echo __('Section'); ?></dt>
+                <dd>
+                        <?php echo h($member['Section']['nom']); ?>
+                        &nbsp;
+                </dd>
                 <dt><?php echo __('Profession'); ?></dt>
                 <dd>
                         <?php echo h($member['Member']['profession']); ?>
@@ -67,11 +83,7 @@
                         <?php echo date('d-m-Y', strtotime($member['Member']['entree_club'])); ?>
                         &nbsp;
                 </dd>
-                <dt><?php echo __('Section'); ?></dt>
-                <dd>
-                        <?php echo h($member['Member']['section']); ?>
-                        &nbsp;
-                </dd>
+                
 
                 <dt><?php echo __('Groupe'); ?></dt>
                 <dd>
@@ -90,7 +102,7 @@
                 </dd>
                 <dt><?php echo __('Adm/demission'); ?></dt>
                 <dd>
-                        <?php echo h($member['Member']['adm/demission']); ?>
+                        <?php echo h($member['Member']['adm_demission']); ?>
                         &nbsp;
                 </dd>
                 <dt><?php echo __('Arbitre'); ?></dt>

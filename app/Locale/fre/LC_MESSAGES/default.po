@@ -5,13 +5,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "POT-Creation-Date: 2012-06-04 11:13+0200\n"
-"PO-Revision-Date: 2012-06-04 12:17+0100\n"
-"Last-Translator: Cyril\n"
+"PO-Revision-Date: 2013-05-08 15:04+0100\n"
+"Last-Translator: Cyril <cyril@3xw.ch>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 1.5.5\n"
 
 #: Controller/ContactsController.php:33;108;136;164;197;225
 msgid "Invalid contact"
@@ -215,7 +216,11 @@ msgstr ""
 
 #: Controller/SubscriptionsController.php:78
 msgid "The form subscription has been saved"
-msgstr "Nous vous remercions pour votre inscription qui a bien été prise en compte. Vous recevrez prochainement une confirmation ou des informations complémentaires de notre part. En cas de question, n’hésitez pas à nous contacter par le biais de l’adresse info@cnn-nyon.ch"
+msgstr ""
+"Nous vous remercions pour votre inscription qui a bien été prise en compte. "
+"Vous recevrez prochainement une confirmation ou des informations "
+"complémentaires de notre part. En cas de question, n’hésitez pas à nous "
+"contacter par le biais de l’adresse info@cnn-nyon.ch"
 
 #: Controller/SubscriptionsController.php:82
 msgid "The form subscription could not be saved. Please, try again."
@@ -269,94 +274,55 @@ msgstr ""
 msgid "Admin Add Contact"
 msgstr ""
 
-#: View/Contacts/admin_add.ctp:15
-#: View/Contacts/admin_edit.ctp:16
-#: View/Contacts/contact.ctp:21
-#: View/Contacts/subscription.ctp:31
-#: View/Elements/search.ctp:7
-#: View/Entries/admin_add.ctp:11
-#: View/Entries/admin_edit.ctp:12
-#: View/Fields/admin_add.ctp:15
-#: View/Fields/admin_add_form_field.ctp:14
-#: View/Fields/admin_edit.ctp:16
-#: View/Forms/admin_add.ctp:12
-#: View/Forms/admin_edit.ctp:13
-#: View/Groups/add.ctp:9
-#: View/Groups/edit.ctp:10
-#: View/Members/admin_add.ctp:55
-#: View/Members/admin_edit.ctp:55
-#: View/Members/admin_import.ctp:10
-#: View/Notifications/admin_add.ctp:10
-#: View/Notifications/admin_edit.ctp:11
-#: View/Options/admin_add.ctp:10
-#: View/Options/admin_edit.ctp:11
-#: View/Sections/admin_add.ctp:12
-#: View/Sections/admin_edit.ctp:13
-#: View/Subscriptions/admin_add.ctp:9
-#: View/Subscriptions/admin_edit.ctp:10
-#: View/Subscriptions/select.ctp:12
-#: View/Subscriptions/subscription.ctp:31
-#: View/Users/admin_add.ctp:11
-#: View/Users/admin_edit.ctp:12
+#: View/Contacts/admin_add.ctp:15 View/Contacts/admin_edit.ctp:16
+#: View/Contacts/contact.ctp:21 View/Contacts/subscription.ctp:31
+#: View/Elements/search.ctp:7 View/Entries/admin_add.ctp:11
+#: View/Entries/admin_edit.ctp:12 View/Fields/admin_add.ctp:15
+#: View/Fields/admin_add_form_field.ctp:14 View/Fields/admin_edit.ctp:16
+#: View/Forms/admin_add.ctp:12 View/Forms/admin_edit.ctp:13
+#: View/Groups/add.ctp:9 View/Groups/edit.ctp:10 View/Members/admin_add.ctp:55
+#: View/Members/admin_edit.ctp:55 View/Members/admin_import.ctp:10
+#: View/Notifications/admin_add.ctp:10 View/Notifications/admin_edit.ctp:11
+#: View/Options/admin_add.ctp:10 View/Options/admin_edit.ctp:11
+#: View/Sections/admin_add.ctp:12 View/Sections/admin_edit.ctp:13
+#: View/Subscriptions/admin_add.ctp:9 View/Subscriptions/admin_edit.ctp:10
+#: View/Subscriptions/select.ctp:12 View/Subscriptions/subscription.ctp:31
+#: View/Users/admin_add.ctp:11 View/Users/admin_edit.ctp:12
 msgid "Submit"
 msgstr "Envoyer"
 
-#: View/Contacts/admin_add.ctp:18
-#: View/Contacts/admin_edit.ctp:19
-#: View/Contacts/admin_index.ctp:11;48
-#: View/Contacts/admin_view.ctp:52
-#: View/Entries/admin_add.ctp:14
-#: View/Entries/admin_edit.ctp:15
-#: View/Entries/admin_index.ctp:9;44
-#: View/Entries/admin_view.ctp:27
-#: View/Fields/admin_add.ctp:18
-#: View/Fields/admin_edit.ctp:19
-#: View/Fields/admin_index.ctp:12;50
-#: View/Fields/admin_view.ctp:42;57
-#: View/Forms/admin_add.ctp:15
-#: View/Forms/admin_edit.ctp:16
-#: View/Forms/admin_finish.ctp:2
-#: View/Forms/admin_index.ctp:10;44
-#: View/Forms/admin_view.ctp:31;55
-#: View/Groups/add.ctp:12
-#: View/Groups/edit.ctp:13
-#: View/Groups/index.ctp:7;38
-#: View/Groups/view.ctp:17
-#: View/Members/admin_add.ctp:58
-#: View/Members/admin_admission.ctp:17;58
-#: View/Members/admin_demission.ctp:17;58
-#: View/Members/admin_edit.ctp:58
-#: View/Members/admin_index.ctp:15
-#: View/Members/admin_jtoa.ctp:18;46
-#: View/Members/admin_view.ctp:192
-#: View/Members/index.ctp:11
-#: View/Members/view.ctp:92
-#: View/Notifications/admin_add.ctp:13
+#: View/Contacts/admin_add.ctp:18 View/Contacts/admin_edit.ctp:19
+#: View/Contacts/admin_index.ctp:11;48 View/Contacts/admin_view.ctp:52
+#: View/Entries/admin_add.ctp:14 View/Entries/admin_edit.ctp:15
+#: View/Entries/admin_index.ctp:9;44 View/Entries/admin_view.ctp:27
+#: View/Fields/admin_add.ctp:18 View/Fields/admin_edit.ctp:19
+#: View/Fields/admin_index.ctp:12;50 View/Fields/admin_view.ctp:42;57
+#: View/Forms/admin_add.ctp:15 View/Forms/admin_edit.ctp:16
+#: View/Forms/admin_finish.ctp:2 View/Forms/admin_index.ctp:10;44
+#: View/Forms/admin_view.ctp:31;55 View/Groups/add.ctp:12
+#: View/Groups/edit.ctp:13 View/Groups/index.ctp:7;38 View/Groups/view.ctp:17
+#: View/Members/admin_add.ctp:58 View/Members/admin_admission.ctp:17;58
+#: View/Members/admin_demission.ctp:17;58 View/Members/admin_edit.ctp:58
+#: View/Members/admin_index.ctp:15 View/Members/admin_jtoa.ctp:18;46
+#: View/Members/admin_view.ctp:192 View/Members/index.ctp:11
+#: View/Members/view.ctp:92 View/Notifications/admin_add.ctp:13
 #: View/Notifications/admin_edit.ctp:14
 #: View/Notifications/admin_index.ctp:8;42
-#: View/Notifications/admin_view.ctp:22
-#: View/Options/admin_add.ctp:13
-#: View/Options/admin_edit.ctp:14
-#: View/Options/admin_index.ctp:8;42
-#: View/Options/admin_view.ctp:22
-#: View/Sections/admin_add.ctp:15
-#: View/Sections/admin_edit.ctp:16
-#: View/Sections/admin_index.ctp:9;42
-#: View/Sections/admin_view.ctp:27;50
-#: View/Subscriptions/admin_add.ctp:12
+#: View/Notifications/admin_view.ctp:22 View/Options/admin_add.ctp:13
+#: View/Options/admin_edit.ctp:14 View/Options/admin_index.ctp:8;42
+#: View/Options/admin_view.ctp:22 View/Sections/admin_add.ctp:15
+#: View/Sections/admin_edit.ctp:16 View/Sections/admin_index.ctp:9;42
+#: View/Sections/admin_view.ctp:27;50 View/Subscriptions/admin_add.ctp:12
 #: View/Subscriptions/admin_edit.ctp:13
 #: View/Subscriptions/admin_index.ctp:9;44
 #: View/Subscriptions/admin_index_by_form.ctp:36
-#: View/Subscriptions/admin_view.ctp:27;48
-#: View/Users/admin_add.ctp:14
-#: View/Users/admin_edit.ctp:15
-#: View/Users/admin_index.ctp:9;44
+#: View/Subscriptions/admin_view.ctp:27;48 View/Users/admin_add.ctp:14
+#: View/Users/admin_edit.ctp:15 View/Users/admin_index.ctp:9;44
 #: View/Users/admin_view.ctp:27
 msgid "Actions"
 msgstr ""
 
-#: View/Contacts/admin_add.ctp:21
-#: View/Contacts/admin_view.ctp:56
+#: View/Contacts/admin_add.ctp:21 View/Contacts/admin_view.ctp:56
 msgid "List Contacts"
 msgstr "Lister"
 
@@ -364,181 +330,110 @@ msgstr "Lister"
 msgid "Admin Edit Contact"
 msgstr "Edit"
 
-#: View/Contacts/admin_edit.ctp:22
-#: View/Contacts/admin_index.ctp:27
-#: View/Entries/admin_edit.ctp:18
-#: View/Entries/admin_index.ctp:23
-#: View/Fields/admin_edit.ctp:22
-#: View/Fields/admin_index.ctp:29
-#: View/Fields/admin_view.ctp:69
-#: View/Forms/admin_edit.ctp:18
-#: View/Forms/admin_index.ctp:23
-#: View/Forms/admin_view.ctp:46
-#: View/Groups/edit.ctp:16
-#: View/Groups/index.ctp:17
-#: View/Members/admin_admission.ctp:37
-#: View/Members/admin_demission.ctp:37
-#: View/Members/admin_edit.ctp:61
-#: View/Members/admin_index.ctp:33
-#: View/Members/admin_jtoa.ctp:39
-#: View/Notifications/admin_edit.ctp:17
-#: View/Notifications/admin_index.ctp:21
-#: View/Options/admin_edit.ctp:17
-#: View/Options/admin_index.ctp:21
-#: View/Sections/admin_edit.ctp:18
-#: View/Sections/admin_index.ctp:21
-#: View/Sections/admin_view.ctp:68
-#: View/Subscriptions/admin_edit.ctp:16
-#: View/Subscriptions/admin_index.ctp:23
-#: View/Subscriptions/admin_view.ctp:61
-#: View/Users/admin_edit.ctp:18
+#: View/Contacts/admin_edit.ctp:22 View/Contacts/admin_index.ctp:27
+#: View/Entries/admin_edit.ctp:18 View/Entries/admin_index.ctp:23
+#: View/Fields/admin_edit.ctp:22 View/Fields/admin_index.ctp:29
+#: View/Fields/admin_view.ctp:69 View/Forms/admin_edit.ctp:18
+#: View/Forms/admin_index.ctp:23 View/Forms/admin_view.ctp:46
+#: View/Groups/edit.ctp:16 View/Groups/index.ctp:17
+#: View/Members/admin_admission.ctp:37 View/Members/admin_demission.ctp:37
+#: View/Members/admin_edit.ctp:61 View/Members/admin_index.ctp:33
+#: View/Members/admin_jtoa.ctp:39 View/Notifications/admin_edit.ctp:17
+#: View/Notifications/admin_index.ctp:21 View/Options/admin_edit.ctp:17
+#: View/Options/admin_index.ctp:21 View/Sections/admin_edit.ctp:18
+#: View/Sections/admin_index.ctp:21 View/Sections/admin_view.ctp:68
+#: View/Subscriptions/admin_edit.ctp:16 View/Subscriptions/admin_index.ctp:23
+#: View/Subscriptions/admin_view.ctp:61 View/Users/admin_edit.ctp:18
 #: View/Users/admin_index.ctp:23
 msgid "Delete"
 msgstr "Effacer"
 
-#: View/Contacts/admin_edit.ctp:22
-#: View/Contacts/admin_index.ctp:27
-#: View/Contacts/admin_view.ctp:55
-#: View/Entries/admin_edit.ctp:18
-#: View/Entries/admin_index.ctp:23
-#: View/Entries/admin_view.ctp:30
-#: View/Fields/admin_edit.ctp:22
-#: View/Fields/admin_index.ctp:29
-#: View/Fields/admin_view.ctp:45;69
-#: View/Forms/admin_edit.ctp:18
-#: View/Forms/admin_index.ctp:23
-#: View/Forms/admin_view.ctp:46;58
-#: View/Groups/edit.ctp:16
-#: View/Groups/index.ctp:17
-#: View/Groups/view.ctp:20
-#: View/Members/admin_admission.ctp:37
-#: View/Members/admin_demission.ctp:37
-#: View/Members/admin_edit.ctp:61
-#: View/Members/admin_index.ctp:33
-#: View/Members/admin_jtoa.ctp:39
-#: View/Members/admin_view.ctp:195
-#: View/Notifications/admin_edit.ctp:17
-#: View/Notifications/admin_index.ctp:21
-#: View/Notifications/admin_view.ctp:25
-#: View/Options/admin_edit.ctp:17
-#: View/Options/admin_index.ctp:21
-#: View/Options/admin_view.ctp:25
-#: View/Sections/admin_edit.ctp:18
-#: View/Sections/admin_index.ctp:21
-#: View/Sections/admin_view.ctp:31;68
-#: View/Subscriptions/admin_edit.ctp:16
+#: View/Contacts/admin_edit.ctp:22 View/Contacts/admin_index.ctp:27
+#: View/Contacts/admin_view.ctp:55 View/Entries/admin_edit.ctp:18
+#: View/Entries/admin_index.ctp:23 View/Entries/admin_view.ctp:30
+#: View/Fields/admin_edit.ctp:22 View/Fields/admin_index.ctp:29
+#: View/Fields/admin_view.ctp:45;69 View/Forms/admin_edit.ctp:18
+#: View/Forms/admin_index.ctp:23 View/Forms/admin_view.ctp:46;58
+#: View/Groups/edit.ctp:16 View/Groups/index.ctp:17 View/Groups/view.ctp:20
+#: View/Members/admin_admission.ctp:37 View/Members/admin_demission.ctp:37
+#: View/Members/admin_edit.ctp:61 View/Members/admin_index.ctp:33
+#: View/Members/admin_jtoa.ctp:39 View/Members/admin_view.ctp:195
+#: View/Notifications/admin_edit.ctp:17 View/Notifications/admin_index.ctp:21
+#: View/Notifications/admin_view.ctp:25 View/Options/admin_edit.ctp:17
+#: View/Options/admin_index.ctp:21 View/Options/admin_view.ctp:25
+#: View/Sections/admin_edit.ctp:18 View/Sections/admin_index.ctp:21
+#: View/Sections/admin_view.ctp:31;68 View/Subscriptions/admin_edit.ctp:16
 #: View/Subscriptions/admin_index.ctp:23
-#: View/Subscriptions/admin_view.ctp:30;61
-#: View/Users/admin_edit.ctp:18
-#: View/Users/admin_index.ctp:23
-#: View/Users/admin_view.ctp:30
+#: View/Subscriptions/admin_view.ctp:30;61 View/Users/admin_edit.ctp:18
+#: View/Users/admin_index.ctp:23 View/Users/admin_view.ctp:30
 msgid "Are you sure you want to delete # %s?"
 msgstr ""
 
-#: View/Contacts/admin_index.ctp:2
-#: View/Elements/menu_admin.ctp:7
+#: View/Contacts/admin_index.ctp:2 View/Elements/menu_admin.ctp:7
 msgid "Contacts"
 msgstr ""
 
-#: View/Contacts/admin_index.ctp:25
-#: View/Entries/admin_index.ctp:21
-#: View/Fields/admin_index.ctp:27
-#: View/Fields/admin_view.ctp:67
-#: View/Forms/admin_index.ctp:21
-#: View/Forms/admin_view.ctp:44
-#: View/Groups/index.ctp:15
-#: View/Members/admin_admission.ctp:35
-#: View/Members/admin_demission.ctp:35
-#: View/Members/admin_index.ctp:31
-#: View/Members/admin_jtoa.ctp:37
-#: View/Members/index.ctp:23
-#: View/Notifications/admin_index.ctp:19
-#: View/Options/admin_index.ctp:19
-#: View/Sections/admin_index.ctp:19
-#: View/Sections/admin_view.ctp:66
-#: View/Subscriptions/admin_index.ctp:21
-#: View/Subscriptions/admin_view.ctp:59
+#: View/Contacts/admin_index.ctp:25 View/Entries/admin_index.ctp:21
+#: View/Fields/admin_index.ctp:27 View/Fields/admin_view.ctp:67
+#: View/Forms/admin_index.ctp:21 View/Forms/admin_view.ctp:44
+#: View/Groups/index.ctp:15 View/Members/admin_admission.ctp:35
+#: View/Members/admin_demission.ctp:35 View/Members/admin_index.ctp:31
+#: View/Members/admin_jtoa.ctp:37 View/Members/index.ctp:23
+#: View/Notifications/admin_index.ctp:19 View/Options/admin_index.ctp:19
+#: View/Sections/admin_index.ctp:19 View/Sections/admin_view.ctp:66
+#: View/Subscriptions/admin_index.ctp:21 View/Subscriptions/admin_view.ctp:59
 #: View/Users/admin_index.ctp:21
 msgid "View"
 msgstr "Voir"
 
-#: View/Contacts/admin_index.ctp:26
-#: View/Entries/admin_index.ctp:22
-#: View/Fields/admin_index.ctp:28
-#: View/Fields/admin_view.ctp:68
-#: View/Forms/admin_index.ctp:22
-#: View/Forms/admin_view.ctp:45
-#: View/Groups/index.ctp:16
-#: View/Members/admin_admission.ctp:36
-#: View/Members/admin_demission.ctp:36
-#: View/Members/admin_index.ctp:32
-#: View/Members/admin_jtoa.ctp:38
-#: View/Notifications/admin_index.ctp:20
-#: View/Options/admin_index.ctp:20
-#: View/Sections/admin_index.ctp:20
-#: View/Sections/admin_view.ctp:67
-#: View/Subscriptions/admin_index.ctp:22
-#: View/Subscriptions/admin_view.ctp:60
-#: View/Users/admin_index.ctp:22
+#: View/Contacts/admin_index.ctp:26 View/Entries/admin_index.ctp:22
+#: View/Fields/admin_index.ctp:28 View/Fields/admin_view.ctp:68
+#: View/Forms/admin_index.ctp:22 View/Forms/admin_view.ctp:45
+#: View/Groups/index.ctp:16 View/Members/admin_admission.ctp:36
+#: View/Members/admin_demission.ctp:36 View/Members/admin_index.ctp:32
+#: View/Members/admin_jtoa.ctp:38 View/Notifications/admin_index.ctp:20
+#: View/Options/admin_index.ctp:20 View/Sections/admin_index.ctp:20
+#: View/Sections/admin_view.ctp:67 View/Subscriptions/admin_index.ctp:22
+#: View/Subscriptions/admin_view.ctp:60 View/Users/admin_index.ctp:22
 msgid "Edit"
 msgstr "Editer"
 
-#: View/Contacts/admin_index.ctp:35
-#: View/Entries/admin_index.ctp:31
-#: View/Fields/admin_index.ctp:37
-#: View/Forms/admin_index.ctp:31
-#: View/Groups/index.ctp:25
-#: View/Members/admin_admission.ctp:45
-#: View/Members/admin_demission.ctp:45
-#: View/Members/admin_index.ctp:41
-#: View/Members/index.ctp:31
-#: View/Notifications/admin_index.ctp:29
-#: View/Options/admin_index.ctp:29
-#: View/Sections/admin_index.ctp:29
+#: View/Contacts/admin_index.ctp:35 View/Entries/admin_index.ctp:31
+#: View/Fields/admin_index.ctp:37 View/Forms/admin_index.ctp:31
+#: View/Groups/index.ctp:25 View/Members/admin_admission.ctp:45
+#: View/Members/admin_demission.ctp:45 View/Members/admin_index.ctp:41
+#: View/Members/index.ctp:31 View/Notifications/admin_index.ctp:29
+#: View/Options/admin_index.ctp:29 View/Sections/admin_index.ctp:29
 #: View/Subscriptions/admin_index.ctp:31
-#: View/Subscriptions/admin_index_by_form.ctp:23
-#: View/Users/admin_index.ctp:31
-msgid "Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}"
+#: View/Subscriptions/admin_index_by_form.ctp:23 View/Users/admin_index.ctp:31
+msgid ""
+"Page {:page} of {:pages}, showing {:current} records out of {:count} total, "
+"starting on record {:start}, ending on {:end}"
 msgstr ""
 
-#: View/Contacts/admin_index.ctp:41
-#: View/Entries/admin_index.ctp:37
-#: View/Fields/admin_index.ctp:43
-#: View/Forms/admin_index.ctp:37
-#: View/Groups/index.ctp:31
-#: View/Members/admin_admission.ctp:51
-#: View/Members/admin_demission.ctp:51
-#: View/Members/admin_index.ctp:47
-#: View/Members/index.ctp:37
-#: View/Notifications/admin_index.ctp:35
-#: View/Options/admin_index.ctp:35
-#: View/Sections/admin_index.ctp:35
+#: View/Contacts/admin_index.ctp:41 View/Entries/admin_index.ctp:37
+#: View/Fields/admin_index.ctp:43 View/Forms/admin_index.ctp:37
+#: View/Groups/index.ctp:31 View/Members/admin_admission.ctp:51
+#: View/Members/admin_demission.ctp:51 View/Members/admin_index.ctp:47
+#: View/Members/index.ctp:37 View/Notifications/admin_index.ctp:35
+#: View/Options/admin_index.ctp:35 View/Sections/admin_index.ctp:35
 #: View/Subscriptions/admin_index.ctp:37
-#: View/Subscriptions/admin_index_by_form.ctp:29
-#: View/Users/admin_index.ctp:37
+#: View/Subscriptions/admin_index_by_form.ctp:29 View/Users/admin_index.ctp:37
 msgid "previous"
 msgstr "suivant"
 
-#: View/Contacts/admin_index.ctp:43
-#: View/Entries/admin_index.ctp:39
-#: View/Fields/admin_index.ctp:45
-#: View/Forms/admin_index.ctp:39
-#: View/Groups/index.ctp:33
-#: View/Members/admin_admission.ctp:53
-#: View/Members/admin_demission.ctp:53
-#: View/Members/admin_index.ctp:49
-#: View/Members/index.ctp:39
-#: View/Notifications/admin_index.ctp:37
-#: View/Options/admin_index.ctp:37
-#: View/Sections/admin_index.ctp:37
+#: View/Contacts/admin_index.ctp:43 View/Entries/admin_index.ctp:39
+#: View/Fields/admin_index.ctp:45 View/Forms/admin_index.ctp:39
+#: View/Groups/index.ctp:33 View/Members/admin_admission.ctp:53
+#: View/Members/admin_demission.ctp:53 View/Members/admin_index.ctp:49
+#: View/Members/index.ctp:39 View/Notifications/admin_index.ctp:37
+#: View/Options/admin_index.ctp:37 View/Sections/admin_index.ctp:37
 #: View/Subscriptions/admin_index.ctp:39
-#: View/Subscriptions/admin_index_by_form.ctp:31
-#: View/Users/admin_index.ctp:39
+#: View/Subscriptions/admin_index_by_form.ctp:31 View/Users/admin_index.ctp:39
 msgid "next"
 msgstr "précédent"
 
-#: View/Contacts/admin_index.ctp:50
-#: View/Contacts/admin_view.ctp:57
+#: View/Contacts/admin_index.ctp:50 View/Contacts/admin_view.ctp:57
 msgid "New Contact"
 msgstr "Nouveau"
 
@@ -546,52 +441,36 @@ msgstr "Nouveau"
 msgid "Contact"
 msgstr ""
 
-#: View/Contacts/admin_view.ctp:4
-#: View/Emails/html/ajout.ctp:6
-#: View/Emails/html/modification.ctp:7
-#: View/Entries/admin_view.ctp:4
-#: View/Fields/admin_view.ctp:4;54
-#: View/Forms/admin_view.ctp:25
-#: View/Groups/view.ctp:4
-#: View/Members/admin_view.ctp:4
-#: View/Notifications/admin_view.ctp:4
-#: View/Options/admin_view.ctp:4
-#: View/Sections/admin_view.ctp:4;41
-#: View/Subscriptions/admin_view.ctp:4;44
+#: View/Contacts/admin_view.ctp:4 View/Emails/html/ajout.ctp:6
+#: View/Emails/html/modification.ctp:7 View/Entries/admin_view.ctp:4
+#: View/Fields/admin_view.ctp:4;54 View/Forms/admin_view.ctp:25
+#: View/Groups/view.ctp:4 View/Members/admin_view.ctp:4
+#: View/Notifications/admin_view.ctp:4 View/Options/admin_view.ctp:4
+#: View/Sections/admin_view.ctp:4;41 View/Subscriptions/admin_view.ctp:4;44
 #: View/Users/admin_view.ctp:4
 msgid "Id"
 msgstr ""
 
-#: View/Contacts/admin_view.ctp:9
-#: View/Sections/admin_view.ctp:42
+#: View/Contacts/admin_view.ctp:9 View/Sections/admin_view.ctp:42
 #: View/Subscriptions/admin_view.ctp:9
 msgid "Created"
 msgstr "Créé"
 
-#: View/Contacts/admin_view.ctp:14
-#: View/Emails/html/ajout.ctp:16
-#: View/Emails/html/modification.ctp:17
-#: View/Members/admin_view.ctp:14
-#: View/Members/view.ctp:9
-#: View/Sections/admin_view.ctp:45
+#: View/Contacts/admin_view.ctp:14 View/Emails/html/ajout.ctp:16
+#: View/Emails/html/modification.ctp:17 View/Members/admin_view.ctp:14
+#: View/Members/view.ctp:9 View/Sections/admin_view.ctp:45
 msgid "Prenom"
 msgstr "Prénom"
 
-#: View/Contacts/admin_view.ctp:19
-#: View/Emails/html/ajout.ctp:21
-#: View/Emails/html/modification.ctp:22
-#: View/Members/admin_view.ctp:19
-#: View/Members/view.ctp:14
-#: View/Sections/admin_view.ctp:9;46
+#: View/Contacts/admin_view.ctp:19 View/Emails/html/ajout.ctp:21
+#: View/Emails/html/modification.ctp:22 View/Members/admin_view.ctp:19
+#: View/Members/view.ctp:14 View/Sections/admin_view.ctp:9;46
 msgid "Nom"
 msgstr ""
 
-#: View/Contacts/admin_view.ctp:24
-#: View/Emails/html/ajout.ctp:66
-#: View/Emails/html/modification.ctp:67
-#: View/Members/admin_view.ctp:64
-#: View/Members/view.ctp:54
-#: View/Notifications/admin_view.ctp:9
+#: View/Contacts/admin_view.ctp:24 View/Emails/html/ajout.ctp:66
+#: View/Emails/html/modification.ctp:67 View/Members/admin_view.ctp:64
+#: View/Members/view.ctp:54 View/Notifications/admin_view.ctp:9
 #: View/Sections/admin_view.ctp:19
 msgid "Email"
 msgstr ""
@@ -608,8 +487,7 @@ msgstr ""
 msgid "Message"
 msgstr ""
 
-#: View/Contacts/admin_view.ctp:44
-#: View/Elements/menu_admin.ctp:3
+#: View/Contacts/admin_view.ctp:44 View/Elements/menu_admin.ctp:3
 #: View/Sections/admin_index.ctp:2
 msgid "Sections"
 msgstr ""
@@ -622,13 +500,11 @@ msgstr "Editer"
 msgid "Delete Contact"
 msgstr "Effacer"
 
-#: View/Elements/menu_admin.ctp:2
-#: View/Sections/admin_view.ctp:37
+#: View/Elements/menu_admin.ctp:2 View/Sections/admin_view.ctp:37
 msgid "Membres"
 msgstr ""
 
-#: View/Elements/menu_admin.ctp:4
-#: View/Notifications/admin_index.ctp:2
+#: View/Elements/menu_admin.ctp:4 View/Notifications/admin_index.ctp:2
 msgid "Notifications"
 msgstr ""
 
@@ -644,8 +520,7 @@ msgstr ""
 msgid "Logout"
 msgstr ""
 
-#: View/Elements/menu_members.ctp:2
-#: View/Users/admin_login.ctp:10
+#: View/Elements/menu_members.ctp:2 View/Users/admin_login.ctp:10
 msgid "Login"
 msgstr ""
 
@@ -653,220 +528,171 @@ msgstr ""
 msgid "Search"
 msgstr "Rechercher"
 
-#: View/Emails/html/ajout.ctp:4
-#: View/Emails/html/modification.ctp:5
-#: View/Members/admin_view.ctp:2
-#: View/Members/view.ctp:2
+#: View/Emails/html/ajout.ctp:4 View/Emails/html/modification.ctp:5
+#: View/Members/admin_view.ctp:2 View/Members/view.ctp:2
 msgid "Member"
 msgstr "Membre"
 
-#: View/Emails/html/ajout.ctp:11
-#: View/Emails/html/modification.ctp:12
-#: View/Members/admin_view.ctp:9
-#: View/Members/view.ctp:4
+#: View/Emails/html/ajout.ctp:11 View/Emails/html/modification.ctp:12
+#: View/Members/admin_view.ctp:9 View/Members/view.ctp:4
 #: View/Sections/admin_view.ctp:44
 msgid "Titre"
 msgstr ""
 
-#: View/Emails/html/ajout.ctp:26
-#: View/Emails/html/modification.ctp:27
+#: View/Emails/html/ajout.ctp:26 View/Emails/html/modification.ctp:27
 #: View/Members/admin_view.ctp:24
 msgid "Profession"
 msgstr ""
 
-#: View/Emails/html/ajout.ctp:31
-#: View/Emails/html/modification.ctp:32
-#: View/Members/admin_view.ctp:29
-#: View/Members/view.ctp:19
+#: View/Emails/html/ajout.ctp:31 View/Emails/html/modification.ctp:32
+#: View/Members/admin_view.ctp:29 View/Members/view.ctp:19
 #: View/Sections/admin_view.ctp:47
 msgid "Adresse"
 msgstr ""
 
-#: View/Emails/html/ajout.ctp:36
-#: View/Emails/html/modification.ctp:37
-#: View/Members/admin_view.ctp:34
-#: View/Members/view.ctp:24
+#: View/Emails/html/ajout.ctp:36 View/Emails/html/modification.ctp:37
+#: View/Members/admin_view.ctp:34 View/Members/view.ctp:24
 #: View/Sections/admin_view.ctp:48
 msgid "Npa"
 msgstr ""
 
-#: View/Emails/html/ajout.ctp:41
-#: View/Emails/html/modification.ctp:42
-#: View/Members/admin_view.ctp:39
-#: View/Members/view.ctp:29
+#: View/Emails/html/ajout.ctp:41 View/Emails/html/modification.ctp:42
+#: View/Members/admin_view.ctp:39 View/Members/view.ctp:29
 #: View/Sections/admin_view.ctp:49
 msgid "Ville"
 msgstr ""
 
-#: View/Emails/html/ajout.ctp:46
-#: View/Emails/html/modification.ctp:47
-#: View/Members/admin_view.ctp:44
-#: View/Members/view.ctp:34
+#: View/Emails/html/ajout.ctp:46 View/Emails/html/modification.ctp:47
+#: View/Members/admin_view.ctp:44 View/Members/view.ctp:34
 msgid "Date De Naissance"
-msgstr ""
+msgstr "Date de naissance"
 
-#: View/Emails/html/ajout.ctp:51
-#: View/Emails/html/modification.ctp:52
-#: View/Members/admin_view.ctp:49
-#: View/Members/view.ctp:39
+#: View/Emails/html/ajout.ctp:51 View/Emails/html/modification.ctp:52
+#: View/Members/admin_view.ctp:49 View/Members/view.ctp:39
 msgid "Private Phone"
 msgstr "Téléphone privé"
 
-#: View/Emails/html/ajout.ctp:56
-#: View/Emails/html/modification.ctp:57
-#: View/Members/admin_view.ctp:54
-#: View/Members/view.ctp:44
+#: View/Emails/html/ajout.ctp:56 View/Emails/html/modification.ctp:57
+#: View/Members/admin_view.ctp:54 View/Members/view.ctp:44
 msgid "Pro Phone"
 msgstr "Téléphone prof."
 
-#: View/Emails/html/ajout.ctp:61
-#: View/Emails/html/modification.ctp:62
-#: View/Members/admin_view.ctp:59
-#: View/Members/view.ctp:49
+#: View/Emails/html/ajout.ctp:61 View/Emails/html/modification.ctp:62
+#: View/Members/admin_view.ctp:59 View/Members/view.ctp:49
 msgid "Mobile Phone"
 msgstr "Natel"
 
-#: View/Emails/html/ajout.ctp:71
-#: View/Emails/html/modification.ctp:72
-#: View/Members/admin_view.ctp:79
-#: View/Members/view.ctp:59
+#: View/Emails/html/ajout.ctp:71 View/Emails/html/modification.ctp:72
+#: View/Members/admin_view.ctp:79 View/Members/view.ctp:59
 msgid "Sexe"
 msgstr ""
 
-#: View/Emails/html/ajout.ctp:76
-#: View/Emails/html/modification.ctp:77
-#: View/Members/admin_view.ctp:84
-#: View/Members/view.ctp:64
+#: View/Emails/html/ajout.ctp:76 View/Emails/html/modification.ctp:77
+#: View/Members/admin_view.ctp:84 View/Members/view.ctp:64
 msgid "Entree Club"
-msgstr ""
+msgstr "Entrée club"
 
-#: View/Emails/html/ajout.ctp:81
-#: View/Emails/html/modification.ctp:82
-#: View/Members/admin_view.ctp:89
-#: View/Members/view.ctp:69
-#: View/Notifications/admin_view.ctp:14
-#: View/Sections/admin_view.ctp:2
+#: View/Emails/html/ajout.ctp:81 View/Emails/html/modification.ctp:82
+#: View/Members/admin_view.ctp:89 View/Members/view.ctp:69
+#: View/Notifications/admin_view.ctp:14 View/Sections/admin_view.ctp:2
 msgid "Section"
 msgstr ""
 
-#: View/Emails/html/ajout.ctp:86
-#: View/Emails/html/modification.ctp:87
-#: View/Members/admin_view.ctp:94
-#: View/Members/view.ctp:74
+#: View/Emails/html/ajout.ctp:86 View/Emails/html/modification.ctp:87
+#: View/Members/admin_view.ctp:94 View/Members/view.ctp:74
 msgid "Mbre Tri"
 msgstr ""
 
-#: View/Emails/html/ajout.ctp:91
-#: View/Emails/html/modification.ctp:92
-#: View/Members/admin_view.ctp:99
-#: View/Members/view.ctp:79
+#: View/Emails/html/ajout.ctp:91 View/Emails/html/modification.ctp:92
+#: View/Members/admin_view.ctp:99 View/Members/view.ctp:79
 msgid "Categorie"
-msgstr ""
+msgstr "Catégorie"
 
-#: View/Emails/html/ajout.ctp:96
-#: View/Emails/html/modification.ctp:97
-#: View/Members/admin_view.ctp:104
-#: View/Members/view.ctp:84
+#: View/Emails/html/ajout.ctp:96 View/Emails/html/modification.ctp:97
+#: View/Members/admin_view.ctp:104 View/Members/view.ctp:84
 msgid "Groupe"
 msgstr ""
 
-#: View/Emails/html/ajout.ctp:101
-#: View/Emails/html/modification.ctp:102
+#: View/Emails/html/ajout.ctp:101 View/Emails/html/modification.ctp:102
 #: View/Members/admin_view.ctp:109
 msgid "Ct"
 msgstr ""
 
-#: View/Emails/html/ajout.ctp:106
-#: View/Emails/html/modification.ctp:107
+#: View/Emails/html/ajout.ctp:106 View/Emails/html/modification.ctp:107
 #: View/Members/admin_view.ctp:114
 msgid "Adm/demission"
 msgstr ""
 
-#: View/Emails/html/ajout.ctp:111
-#: View/Emails/html/modification.ctp:112
+#: View/Emails/html/ajout.ctp:111 View/Emails/html/modification.ctp:112
 #: View/Members/admin_view.ctp:119
 msgid "Arbitre"
 msgstr ""
 
-#: View/Emails/html/ajout.ctp:116
-#: View/Emails/html/modification.ctp:117
+#: View/Emails/html/ajout.ctp:116 View/Emails/html/modification.ctp:117
 #: View/Members/admin_view.ctp:124
 msgid "Licence"
 msgstr ""
 
-#: View/Emails/html/ajout.ctp:121
-#: View/Emails/html/modification.ctp:122
+#: View/Emails/html/ajout.ctp:121 View/Emails/html/modification.ctp:122
 #: View/Members/admin_view.ctp:129
 msgid "Status"
 msgstr ""
 
-#: View/Emails/html/ajout.ctp:126
-#: View/Emails/html/modification.ctp:127
+#: View/Emails/html/ajout.ctp:126 View/Emails/html/modification.ctp:127
 #: View/Members/admin_view.ctp:134
 msgid "Comite"
 msgstr "Comité"
 
-#: View/Emails/html/ajout.ctp:131
-#: View/Emails/html/modification.ctp:132
+#: View/Emails/html/ajout.ctp:131 View/Emails/html/modification.ctp:132
 #: View/Members/admin_view.ctp:139
 msgid "Ancien Comite"
-msgstr ""
+msgstr "Ancien du comité"
 
-#: View/Emails/html/ajout.ctp:136
-#: View/Emails/html/modification.ctp:137
+#: View/Emails/html/ajout.ctp:136 View/Emails/html/modification.ctp:137
 #: View/Members/admin_view.ctp:144
 msgid "En Conge"
-msgstr ""
+msgstr "En congé"
 
-#: View/Emails/html/ajout.ctp:141
-#: View/Emails/html/modification.ctp:142
+#: View/Emails/html/ajout.ctp:141 View/Emails/html/modification.ctp:142
 #: View/Members/admin_view.ctp:149
 msgid "Moniteur"
 msgstr ""
 
-#: View/Emails/html/ajout.ctp:146
-#: View/Emails/html/modification.ctp:147
+#: View/Emails/html/ajout.ctp:146 View/Emails/html/modification.ctp:147
 #: View/Members/admin_view.ctp:154
 msgid "Entraineur"
 msgstr ""
 
-#: View/Emails/html/ajout.ctp:151
-#: View/Emails/html/modification.ctp:152
+#: View/Emails/html/ajout.ctp:151 View/Emails/html/modification.ctp:152
 #: View/Members/admin_view.ctp:159
 msgid "En Test"
 msgstr ""
 
-#: View/Emails/html/ajout.ctp:156
-#: View/Emails/html/modification.ctp:157
+#: View/Emails/html/ajout.ctp:156 View/Emails/html/modification.ctp:157
 #: View/Members/admin_view.ctp:164
 msgid "Sans Cotisation"
-msgstr ""
+msgstr "Sans cotisation"
 
-#: View/Emails/html/ajout.ctp:161
-#: View/Emails/html/modification.ctp:162
+#: View/Emails/html/ajout.ctp:161 View/Emails/html/modification.ctp:162
 #: View/Members/admin_view.ctp:169
 msgid "Delai"
 msgstr ""
 
-#: View/Emails/html/ajout.ctp:166
-#: View/Emails/html/modification.ctp:167
+#: View/Emails/html/ajout.ctp:166 View/Emails/html/modification.ctp:167
 msgid "Bus"
 msgstr ""
 
-#: View/Emails/html/ajout.ctp:171
-#: View/Emails/html/modification.ctp:172
+#: View/Emails/html/ajout.ctp:171 View/Emails/html/modification.ctp:172
 #: View/Members/admin_view.ctp:174
 msgid "Avs"
 msgstr ""
 
-#: View/Emails/html/ajout.ctp:176
-#: View/Emails/html/modification.ctp:177
+#: View/Emails/html/ajout.ctp:176 View/Emails/html/modification.ctp:177
 #: View/Members/admin_view.ctp:179
 msgid "SSS"
 msgstr ""
 
-#: View/Emails/html/ajout.ctp:181
-#: View/Emails/html/modification.ctp:182
+#: View/Emails/html/ajout.ctp:181 View/Emails/html/modification.ctp:182
 #: View/Members/admin_view.ctp:184
 msgid "JS"
 msgstr ""
@@ -875,33 +701,23 @@ msgstr ""
 msgid "Admin Add Entry"
 msgstr "Ajouter une entrée"
 
-#: View/Entries/admin_add.ctp:17
-#: View/Entries/admin_edit.ctp:19
-#: View/Entries/admin_view.ctp:31
-#: View/Subscriptions/admin_add.ctp:18
-#: View/Subscriptions/admin_edit.ctp:20
-#: View/Subscriptions/admin_index.ctp:49
+#: View/Entries/admin_add.ctp:17 View/Entries/admin_edit.ctp:19
+#: View/Entries/admin_view.ctp:31 View/Subscriptions/admin_add.ctp:18
+#: View/Subscriptions/admin_edit.ctp:20 View/Subscriptions/admin_index.ctp:49
 #: View/Subscriptions/admin_view.ctp:35
 msgid "List Entries"
 msgstr "Lister les entrées"
 
-#: View/Entries/admin_add.ctp:18
-#: View/Entries/admin_edit.ctp:20
-#: View/Entries/admin_index.ctp:47
-#: View/Entries/admin_view.ctp:33
-#: View/Forms/admin_view.ctp:61
-#: View/Subscriptions/admin_add.ctp:15
-#: View/Subscriptions/admin_edit.ctp:17
-#: View/Subscriptions/admin_view.ctp:31
+#: View/Entries/admin_add.ctp:18 View/Entries/admin_edit.ctp:20
+#: View/Entries/admin_index.ctp:47 View/Entries/admin_view.ctp:33
+#: View/Forms/admin_view.ctp:61 View/Subscriptions/admin_add.ctp:15
+#: View/Subscriptions/admin_edit.ctp:17 View/Subscriptions/admin_view.ctp:31
 msgid "List Subscriptions"
 msgstr "Lister les inscriptions"
 
-#: View/Entries/admin_add.ctp:19
-#: View/Entries/admin_edit.ctp:21
-#: View/Entries/admin_index.ctp:48
-#: View/Entries/admin_view.ctp:34
-#: View/Subscriptions/admin_index.ctp:46
-#: View/Subscriptions/admin_view.ctp:32
+#: View/Entries/admin_add.ctp:19 View/Entries/admin_edit.ctp:21
+#: View/Entries/admin_index.ctp:48 View/Entries/admin_view.ctp:34
+#: View/Subscriptions/admin_index.ctp:46 View/Subscriptions/admin_view.ctp:32
 msgid "New Subscription"
 msgstr "Nouvelle inscription"
 
@@ -913,10 +729,8 @@ msgstr "Editer un champ"
 msgid "Entries"
 msgstr ""
 
-#: View/Entries/admin_index.ctp:46
-#: View/Entries/admin_view.ctp:32
-#: View/Subscriptions/admin_add.ctp:19
-#: View/Subscriptions/admin_edit.ctp:21
+#: View/Entries/admin_index.ctp:46 View/Entries/admin_view.ctp:32
+#: View/Subscriptions/admin_add.ctp:19 View/Subscriptions/admin_edit.ctp:21
 #: View/Subscriptions/admin_index.ctp:50
 #: View/Subscriptions/admin_view.ctp:36;70
 msgid "New Entry"
@@ -926,20 +740,16 @@ msgstr "Nouvelle entrée"
 msgid "Entry"
 msgstr "Valeur"
 
-#: View/Entries/admin_view.ctp:9
-#: View/Subscriptions/admin_view.ctp:45
+#: View/Entries/admin_view.ctp:9 View/Subscriptions/admin_view.ctp:45
 msgid "Key"
 msgstr "Clé"
 
-#: View/Entries/admin_view.ctp:14
-#: View/Fields/admin_view.ctp:55
-#: View/Options/admin_view.ctp:9
-#: View/Subscriptions/admin_view.ctp:46
+#: View/Entries/admin_view.ctp:14 View/Fields/admin_view.ctp:55
+#: View/Options/admin_view.ctp:9 View/Subscriptions/admin_view.ctp:46
 msgid "Value"
 msgstr ""
 
-#: View/Entries/admin_view.ctp:19
-#: View/Subscriptions/admin_view.ctp:2
+#: View/Entries/admin_view.ctp:19 View/Subscriptions/admin_view.ctp:2
 msgid "Subscription"
 msgstr "Inscription"
 
@@ -951,23 +761,20 @@ msgstr "Editer entrée"
 msgid "Delete Entry"
 msgstr "Effacer entrée"
 
-#: View/Fields/admin_add.ctp:4
-#: View/Fields/admin_add_form_field.ctp:4
+#: View/Fields/admin_add.ctp:4 View/Fields/admin_add_form_field.ctp:4
 msgid "Admin Add Field"
 msgstr "Ajouter un champ"
 
-#: View/Fields/admin_add.ctp:9
-#: View/Fields/admin_add_form_field.ctp:9
+#: View/Fields/admin_add.ctp:9 View/Fields/admin_add_form_field.ctp:9
 #: View/Fields/admin_edit.ctp:10
 msgid "For select and multiple choice only ! Separate with choices with \",\" "
-msgstr "Pour les choix multiple et select uniquement ! Séparer les options avec une virgule"
+msgstr ""
+"Pour les choix multiple et select uniquement ! Séparer les options avec une "
+"virgule"
 
-#: View/Fields/admin_add.ctp:21
-#: View/Fields/admin_edit.ctp:23
-#: View/Fields/admin_view.ctp:46
-#: View/Options/admin_add.ctp:17
-#: View/Options/admin_edit.ctp:19
-#: View/Options/admin_index.ctp:45
+#: View/Fields/admin_add.ctp:21 View/Fields/admin_edit.ctp:23
+#: View/Fields/admin_view.ctp:46 View/Options/admin_add.ctp:17
+#: View/Options/admin_edit.ctp:19 View/Options/admin_index.ctp:45
 #: View/Options/admin_view.ctp:28
 msgid "List Fields"
 msgstr "Lister les champs"
@@ -980,58 +787,45 @@ msgstr "Editer un champ"
 msgid "Fields"
 msgstr "Champs"
 
-#: View/Fields/admin_index.ctp:52
-#: View/Forms/admin_view.ctp:59
-#: View/Options/admin_add.ctp:18
-#: View/Options/admin_edit.ctp:20
-#: View/Options/admin_index.ctp:46
-#: View/Options/admin_view.ctp:29
+#: View/Fields/admin_index.ctp:52 View/Forms/admin_view.ctp:59
+#: View/Options/admin_add.ctp:18 View/Options/admin_edit.ctp:20
+#: View/Options/admin_index.ctp:46 View/Options/admin_view.ctp:29
 msgid "New Field"
 msgstr "Nouveau champ"
 
-#: View/Fields/admin_index.ctp:53
-#: View/Forms/admin_add.ctp:17
-#: View/Forms/admin_edit.ctp:19
-#: View/Subscriptions/admin_add.ctp:16
-#: View/Subscriptions/admin_edit.ctp:18
-#: View/Subscriptions/admin_index.ctp:47
+#: View/Fields/admin_index.ctp:53 View/Forms/admin_add.ctp:17
+#: View/Forms/admin_edit.ctp:19 View/Subscriptions/admin_add.ctp:16
+#: View/Subscriptions/admin_edit.ctp:18 View/Subscriptions/admin_index.ctp:47
 #: View/Subscriptions/admin_index_by_form.ctp:38
 #: View/Subscriptions/admin_view.ctp:33
 msgid "List Forms"
 msgstr "Lister les formualires"
 
-#: View/Fields/admin_view.ctp:2
-#: View/Options/admin_view.ctp:14
+#: View/Fields/admin_view.ctp:2 View/Options/admin_view.ctp:14
 msgid "Field"
 msgstr "Champ"
 
-#: View/Fields/admin_view.ctp:9
-#: View/Forms/admin_view.ctp:26
+#: View/Fields/admin_view.ctp:9 View/Forms/admin_view.ctp:26
 msgid "Label"
 msgstr "Libélé"
 
-#: View/Fields/admin_view.ctp:14
-#: View/Forms/admin_view.ctp:27
+#: View/Fields/admin_view.ctp:14 View/Forms/admin_view.ctp:27
 msgid "Help Text"
 msgstr "Texte d'aide"
 
-#: View/Fields/admin_view.ctp:19
-#: View/Forms/admin_view.ctp:28
+#: View/Fields/admin_view.ctp:19 View/Forms/admin_view.ctp:28
 msgid "Type"
 msgstr ""
 
-#: View/Fields/admin_view.ctp:24
-#: View/Forms/admin_view.ctp:29
+#: View/Fields/admin_view.ctp:24 View/Forms/admin_view.ctp:29
 msgid "Require"
 msgstr "Requis"
 
-#: View/Fields/admin_view.ctp:29
-#: View/Forms/admin_view.ctp:30
+#: View/Fields/admin_view.ctp:29 View/Forms/admin_view.ctp:30
 msgid "Class"
 msgstr ""
 
-#: View/Fields/admin_view.ctp:34
-#: View/Subscriptions/admin_view.ctp:19
+#: View/Fields/admin_view.ctp:34 View/Subscriptions/admin_view.ctp:19
 msgid "Form"
 msgstr "Formulaire"
 
@@ -1052,8 +846,7 @@ msgstr "Options relatives"
 msgid "Field Id"
 msgstr ""
 
-#: View/Fields/admin_view.ctp:78
-#: View/Options/admin_index.ctp:44
+#: View/Fields/admin_view.ctp:78 View/Options/admin_index.ctp:44
 #: View/Options/admin_view.ctp:27
 #, fuzzy
 msgid "New Option"
@@ -1081,20 +874,22 @@ msgstr "Lien public pour"
 
 #: View/Forms/admin_get_public_link.ctp:3
 msgid "Copy paste this for a popup subscription"
-msgstr "Copier/coller le code ci-dessous dans votre page HTML pour une inscription type popup"
+msgstr ""
+"Copier/coller le code ci-dessous dans votre page HTML pour une inscription "
+"type popup"
 
 #: View/Forms/admin_get_public_link.ctp:14
 msgid "Copy paste this for a new page subscription"
-msgstr "Copier/coller le code ci-dessous dans votre page HTML pour une inscription type nouvelle page"
+msgstr ""
+"Copier/coller le code ci-dessous dans votre page HTML pour une inscription "
+"type nouvelle page"
 
 #: View/Forms/admin_index.ctp:2
 msgid "Forms"
 msgstr "Formulaires"
 
-#: View/Forms/admin_index.ctp:46
-#: View/Subscriptions/admin_add.ctp:17
-#: View/Subscriptions/admin_edit.ctp:19
-#: View/Subscriptions/admin_index.ctp:48
+#: View/Forms/admin_index.ctp:46 View/Subscriptions/admin_add.ctp:17
+#: View/Subscriptions/admin_edit.ctp:19 View/Subscriptions/admin_index.ctp:48
 #: View/Subscriptions/admin_view.ctp:34
 msgid "New Form"
 msgstr "Nouveau formulaire"
@@ -1131,14 +926,11 @@ msgstr "Obtenir le lien public"
 msgid "Add Group"
 msgstr ""
 
-#: View/Groups/add.ctp:15
-#: View/Groups/edit.ctp:17
-#: View/Groups/view.ctp:21
+#: View/Groups/add.ctp:15 View/Groups/edit.ctp:17 View/Groups/view.ctp:21
 msgid "List Groups"
 msgstr ""
 
-#: View/Groups/edit.ctp:4
-#: View/Groups/view.ctp:19
+#: View/Groups/edit.ctp:4 View/Groups/view.ctp:19
 msgid "Edit Group"
 msgstr ""
 
@@ -1146,13 +938,11 @@ msgstr ""
 msgid "Groups"
 msgstr "Groupes"
 
-#: View/Groups/index.ctp:40
-#: View/Groups/view.ctp:22
+#: View/Groups/index.ctp:40 View/Groups/view.ctp:22
 msgid "New Group"
 msgstr ""
 
-#: View/Groups/view.ctp:2
-#: View/Users/admin_view.ctp:19
+#: View/Groups/view.ctp:2 View/Users/admin_view.ctp:19
 msgid "Group"
 msgstr ""
 
@@ -1168,16 +958,13 @@ msgstr ""
 msgid "Admin Add Member"
 msgstr "Ajouter"
 
-#: View/Members/admin_add.ctp:61
-#: View/Members/admin_edit.ctp:62
+#: View/Members/admin_add.ctp:61 View/Members/admin_edit.ctp:62
 #: View/Members/admin_view.ctp:196
 msgid "List Members"
 msgstr "Lister"
 
-#: View/Members/admin_admission.ctp:2
-#: View/Members/admin_demission.ctp:2
-#: View/Members/admin_index.ctp:2
-#: View/Members/admin_jtoa.ctp:2
+#: View/Members/admin_admission.ctp:2 View/Members/admin_demission.ctp:2
+#: View/Members/admin_index.ctp:2 View/Members/admin_jtoa.ctp:2
 #: View/Members/index.ctp:2
 msgid "Members"
 msgstr "Membres"
@@ -1210,8 +997,7 @@ msgstr ""
 msgid "Ajouter Membre"
 msgstr ""
 
-#: View/Members/admin_index.ctp:57
-#: View/Sections/admin_view.ctp:30
+#: View/Members/admin_index.ctp:57 View/Sections/admin_view.ctp:30
 msgid "Exporter"
 msgstr ""
 
@@ -1263,8 +1049,7 @@ msgstr ""
 msgid "Admin Add Notification"
 msgstr "Ajouter"
 
-#: View/Notifications/admin_add.ctp:16
-#: View/Notifications/admin_edit.ctp:18
+#: View/Notifications/admin_add.ctp:16 View/Notifications/admin_edit.ctp:18
 #: View/Notifications/admin_view.ctp:26
 msgid "List Notifications"
 msgstr "Lister"
@@ -1273,8 +1058,7 @@ msgstr "Lister"
 msgid "Admin Edit Notification"
 msgstr "Editer"
 
-#: View/Notifications/admin_index.ctp:44
-#: View/Notifications/admin_view.ctp:27
+#: View/Notifications/admin_index.ctp:44 View/Notifications/admin_view.ctp:27
 msgid "New Notification"
 msgstr "Nouveau"
 
@@ -1295,8 +1079,7 @@ msgstr "Effacer"
 msgid "Admin Add Option"
 msgstr "Ajouter"
 
-#: View/Options/admin_add.ctp:16
-#: View/Options/admin_edit.ctp:18
+#: View/Options/admin_add.ctp:16 View/Options/admin_edit.ctp:18
 #: View/Options/admin_view.ctp:26
 #, fuzzy
 msgid "List Options"
@@ -1329,8 +1112,7 @@ msgstr "Effacer"
 msgid "Admin Add Section"
 msgstr "Ajouter"
 
-#: View/Sections/admin_add.ctp:18
-#: View/Sections/admin_view.ctp:32
+#: View/Sections/admin_add.ctp:18 View/Sections/admin_view.ctp:32
 msgid "List Sections"
 msgstr "Lister"
 
@@ -1358,8 +1140,7 @@ msgstr "Effacer"
 msgid "New Section"
 msgstr "Ajouter"
 
-#: View/Sections/admin_view.ctp:43
-#: View/Subscriptions/admin_view.ctp:14
+#: View/Sections/admin_view.ctp:43 View/Subscriptions/admin_view.ctp:14
 msgid "Modified"
 msgstr ""
 
@@ -1412,8 +1193,7 @@ msgstr "Sélectionner"
 msgid "Admin Add User"
 msgstr ""
 
-#: View/Users/admin_add.ctp:17
-#: View/Users/admin_edit.ctp:19
+#: View/Users/admin_add.ctp:17 View/Users/admin_edit.ctp:19
 #: View/Users/admin_view.ctp:31
 msgid "List Users"
 msgstr "Lister"
@@ -1454,51 +1234,42 @@ msgstr "Editer"
 msgid "Delete User"
 msgstr "Effacer"
 
-#: /Users/cyril/Sites/cnn-gestion/app/Model/Contact.php:validation
-#: for field
+#: /Users/cyril/Sites/cnn-gestion/app/Model/Contact.php:validation for field
 #: prenom;validation nom;validation email;validation sujet;validation
 #: section_id
 msgid "Ce champ ne peut pas être vide"
 msgstr ""
 
-#: /Users/cyril/Sites/cnn-gestion/app/Model/Entry.php:validation
-#: for field
+#: /Users/cyril/Sites/cnn-gestion/app/Model/Entry.php:validation for field
 #: key;validation value
 #: /Users/cyril/Sites/cnn-gestion/app/Model/Field.php:validation
 #: label;validation type
-#: /Users/cyril/Sites/cnn-gestion/app/Model/Form.php:validation
-#: name
+#: /Users/cyril/Sites/cnn-gestion/app/Model/Form.php:validation name
 #: /Users/cyril/Sites/cnn-gestion/app/Model/Group.php:validation
 #: /Users/cyril/Sites/cnn-gestion/app/Model/Member.php:validation
 #: prenom;validation nom
 #: /Users/cyril/Sites/cnn-gestion/app/Model/Section.php:validation
-#: /Users/cyril/Sites/cnn-gestion/app/Model/User.php:validation
-#: password
+#: /Users/cyril/Sites/cnn-gestion/app/Model/User.php:validation password
 msgid "notempty"
 msgstr "Ce champ ne peut pas être vide"
 
-#: /Users/cyril/Sites/cnn-gestion/app/Model/Entry.php:validation
-#: for field
+#: /Users/cyril/Sites/cnn-gestion/app/Model/Entry.php:validation for field
 #: subscription_id
-#: /Users/cyril/Sites/cnn-gestion/app/Model/Field.php:validation
-#: form_id
+#: /Users/cyril/Sites/cnn-gestion/app/Model/Field.php:validation form_id
 #: /Users/cyril/Sites/cnn-gestion/app/Model/Notification.php:validation
 #: section_id /Users/cyril/Sites/cnn-gestion/app/Model/Option.php:validation
 #: field_id
 #: /Users/cyril/Sites/cnn-gestion/app/Model/Subscription.php:validation
-#: /Users/cyril/Sites/cnn-gestion/app/Model/User.php:validation
-#: group_id
+#: /Users/cyril/Sites/cnn-gestion/app/Model/User.php:validation group_id
 msgid "numeric"
 msgstr "Ce champ doit être numérique"
 
-#: /Users/cyril/Sites/cnn-gestion/app/Model/Notification.php:validation
-#: for
+#: /Users/cyril/Sites/cnn-gestion/app/Model/Notification.php:validation for
 #: field email /Users/cyril/Sites/cnn-gestion/app/Model/Section.php:validation
 msgid "email"
 msgstr ""
 
-#: /Users/cyril/Sites/cnn-gestion/app/Model/User.php:validation
-#: for field
+#: /Users/cyril/Sites/cnn-gestion/app/Model/User.php:validation for field
 #: username
 msgid "Ce nom d'utilisateur a déjà été choisi."
 msgstr ""

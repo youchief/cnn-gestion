@@ -1,6 +1,6 @@
 <div class="members index">
-	<h2><?php echo __('Members');?></h2>
-	<table cellpadding="0" cellspacing="0">
+	<h2><?php echo __('Démission des members');?></h2>
+	<table cellpadding="0" cellspacing="0" class="table">
 	<tr>
 			<th><?php echo $this->Paginator->sort('titre');?></th>
 			<th><?php echo $this->Paginator->sort('prenom');?></th>
@@ -11,8 +11,6 @@
 			<th><?php echo $this->Paginator->sort('sexe');?></th>
 			<th><?php echo $this->Paginator->sort('entree_club');?></th>
 			<th><?php echo $this->Paginator->sort('section');?></th>
-			<th><?php echo $this->Paginator->sort('mbre_tri');?></th>
-			<th><?php echo $this->Paginator->sort('categorie');?></th>
 			<th><?php echo $this->Paginator->sort('adm/demission');?></th>
 			<th class="actions"><?php echo __('Actions');?></th>
 	</tr>
@@ -28,9 +26,7 @@
 		<td><?php echo h($member['Member']['sexe']); ?>&nbsp;</td>
 		<td><?php echo h($member['Member']['entree_club']); ?>&nbsp;</td>
 		<td><?php echo h($member['Member']['section']); ?>&nbsp;</td>
-		<td><?php echo h($member['Member']['mbre_tri']); ?>&nbsp;</td>
-		<td><?php echo h($member['Member']['categorie']); ?>&nbsp;</td>
-		<td><?php echo h($member['Member']['adm/demission']); ?>&nbsp;</td>
+		<td><?php echo h($member['Member']['adm_demission']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $member['Member']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $member['Member']['id'])); ?>
@@ -48,15 +44,11 @@
 
 	<div class="paging">
 	<?php
-		echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled'));
+		echo $this->Paginator->prev('< ' , array(), null, array('class' => 'prev disabled'));
 		echo $this->Paginator->numbers(array('separator' => ''));
-		echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
+		echo $this->Paginator->next( ' >', array(), null, array('class' => 'next disabled'));
 	?>
 	</div>
 </div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<?php echo $this->Html->link(__('Effacer'), array('action' => 'validateDemission'), null, __('Etes vous sur d effacer les démissions ?')); ?>
-	</ul>
-</div>
+
+		<?php echo $this->Html->link(__('Effacer'), array('action' => 'validateDemission'), array('class'=>'btn btn-success'), __('Etes vous sur d effacer les démissions ?')); ?>

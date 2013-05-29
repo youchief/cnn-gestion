@@ -38,7 +38,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
         <body>
                 <div class="navbar">
                         <div class="navbar-inner">
-                                <a class="brand" href="#"><?php echo $this->Html->image('logo.png')?> - Centre des Nageurs de Nyon</a>
+                                <a class="brand" href="#"><?php echo $this->Html->image('logo.png')?> - Cercle des Nageurs de Nyon</a>
 
                         </div>
                 </div>

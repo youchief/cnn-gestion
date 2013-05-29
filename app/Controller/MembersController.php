@@ -27,7 +27,7 @@ class MembersController extends AppController {
                 $this->autoRender = false;
                 ini_set('max_execution_time', 1600); //increase max_execution_time to 10 min if data set is very large
                 $results = $this->Member->find('all', array()); // set the query function
-              
+
 
                 App::import('Vendor', 'PhpExcel', array('file' => 'PhpExcel.php'));
                 $workbook = new PHPExcel;
@@ -36,9 +36,8 @@ class MembersController extends AppController {
                     'font' => array(
                         'bold' => true,
                     )
-                  
                 );
-                $workbook->getActiveSheet()->getStyle('A1:AI1')->applyFromArray($styleArray);
+                $workbook->getActiveSheet()->getStyle('A1:AK1')->applyFromArray($styleArray);
 
                 $sheet->setCellValue('A1', 'TITRE');
                 $sheet->setCellValue('B1', 'NOM');
@@ -75,6 +74,8 @@ class MembersController extends AppController {
                 $sheet->setCellValue('AG1', 'SSS');
                 $sheet->setCellValue('AH1', 'JS');
                 $sheet->setCellValue('AI1', 'PROFESSION');
+                $sheet->setCellValue('AJ1', 'CREE');
+                $sheet->setCellValue('AK1', 'MODIFIE');
                 for ($i = 2; $i < count($results); $i++) {
                         $sheet->setCellValue('A' . $i, $results[$i]['Member']['titre']);
                         $sheet->setCellValue('B' . $i, $results[$i]['Member']['nom']);
@@ -95,7 +96,7 @@ class MembersController extends AppController {
                         $sheet->setCellValue('Q' . $i, $results[$i]['Member']['mbre_tri']);
                         $sheet->setCellValue('R' . $i, $results[$i]['Member']['categorie']);
                         $sheet->setCellValue('S' . $i, $results[$i]['Member']['ct']);
-                        $sheet->setCellValue('T' . $i, $results[$i]['Member']['adm/demission']);
+                        $sheet->setCellValue('T' . $i, $results[$i]['Member']['adm_demission']);
                         $sheet->setCellValue('U' . $i, $results[$i]['Member']['arbitre']);
                         $sheet->setCellValue('V' . $i, $results[$i]['Member']['licence']);
                         $sheet->setCellValue('W' . $i, $results[$i]['Member']['status']);
@@ -111,45 +112,46 @@ class MembersController extends AppController {
                         $sheet->setCellValue('AG' . $i, $results[$i]['Member']['sss']);
                         $sheet->setCellValue('AH' . $i, $results[$i]['Member']['js']);
                         $sheet->setCellValue('AI' . $i, $results[$i]['Member']['profession']);
+                        $sheet->setCellValue('AJ' . $i, date('d-m-y h:i', strtotime($results[$i]['Member']['created'])));
+                        $sheet->setCellValue('AK' . $i, date('d-m-y h:i', strtotime($results[$i]['Member']['modified'])));
                 }
                 $writer = new PHPExcel_Writer_Excel2007($workbook);
                 header('Content-type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
                 header('Content-Disposition:inline;filename=export_membres.xlsx ');
-                if ($writer->save('php://output')){
-                        $this->Session->setFlash(__('Export télécharger sur votre ordinateur'), 'default', array('class'=>'alert alert-success'));
+                if ($writer->save('php://output')) {
+                        $this->Session->setFlash(__('Export télécharger sur votre ordinateur'), 'default', array('class' => 'alert alert-success'));
                 }
                 $workbook->disconnectWorksheets();
                 unset($workbook);
-             
         }
 
         public function admin_admission() {
                 $this->Member->recursive = 0;
-                $this->set('members', $this->paginate(array('Member.adm/demission' => 'Y')));
+                $this->set('members', $this->paginate(array('Member.adm_demission' => 'Y')));
         }
 
         public function admin_jtoa() {
                 $this->Member->recursive = 0;
-                $members = $this->Member->find('all', array('conditions' => array('Member.status' => 'J')));
+                $members = $this->Member->find('all', array('conditions' => array('Member.status' => 'J', 'Member.date_de_naissance  <= ' => date('Y-m-d', strtotime('-16 years')))));
                 $new_adult = array();
                 foreach ($members as $member) {
                         if ($this->_birthday($member['Member']['date_de_naissance']) >= 16) {
                                 $new_adult[] = $member;
                         }
                 }
-                $this->set('members', $new_adult);
+                $this->set('members', $members);
         }
 
         public function admin_validateJtoA() {
                 $this->Member->recursive = 0;
-                $members = $this->Member->find('all', array('conditions' => array('Member.status' => 'J')));
+                $members = $this->Member->find('all', array('conditions' => array('Member.status' => 'J', 'Member.date_de_naissance  <= ' => date('Y-m-d', strtotime('-16 years')))));
                 foreach ($members as $member) {
-                        if ($this->_birthday($member['Member']['date_de_naissance']) >= 16) {
-                                $this->Member->read(null, $member['Member']['id']);
-                                $this->Member->saveField('status', 'A');
-                        }
+
+                        $this->Member->read(null, $member['Member']['id']);
+                        $this->Member->saveField('status', 'A');
                 }
-                $this->Session->setFlash(__('Vous avez passer les juniors en adulte'));
+                $this->_notify_group_action($members, 'Junior vers Adulte');
+                $this->Session->setFlash(__('Vous avez passer les juniors en adulte'), 'default', array('class' => 'alert alert-success'));
                 $this->redirect(array('action' => 'index'));
         }
 
@@ -166,30 +168,31 @@ class MembersController extends AppController {
         }
 
         public function admin_validateAdmission() {
-                $members = $this->Member->find('all', array('conditions' => array('Member.adm/demission' => 'Y')));
+                $members = $this->Member->find('all', array('conditions' => array('Member.adm_demission' => 'Y')));
 
                 foreach ($members as $member) {
                         $this->Member->read(null, $member['Member']['id']);
-                        $this->Member->saveField('adm/demission', '');
+                        $this->Member->saveField('adm_demission', '');
                 }
-                $this->Session->setFlash(__('Vous avez validé les admissions'));
+                $this->_notify_group_action($members, 'Admissions validées');
+                $this->Session->setFlash(__('Vous avez validé les admissions'), 'default', array('class'=>'alert alert-success'));
                 $this->redirect(array('action' => 'index'));
         }
 
         public function admin_validateDemission() {
-                $members = $this->Member->find('all', array('conditions' => array('Member.adm/demission' => 'Z')));
+                $members = $this->Member->find('all', array('conditions' => array('Member.adm_demission' => 'Z')));
                 foreach ($members as $member) {
                         $this->Member->read(null, $member['Member']['id']);
                         $this->Member->delete();
                 }
-
-                $this->Session->setFlash(__('Vous avez effacer les démissions'));
+                $this->_notify_group_action($members, 'Membres supprimés');
+                $this->Session->setFlash(__('Vous avez effacer les démissions'), 'default', array('class'=>'alert alert-success'));
                 $this->redirect(array('action' => 'index'));
         }
 
         public function admin_demission() {
                 $this->Member->recursive = 0;
-                $this->set('members', $this->paginate(array('Member.adm/demission' => 'Z')));
+                $this->set('members', $this->paginate(array('Member.adm_demission' => 'Z')));
         }
 
         public function search() {
@@ -200,9 +203,9 @@ class MembersController extends AppController {
                         } else if (!empty($this->request->data['Member']['prenom'])) {
                                 $members = $this->paginate(array('Member.prenom LIKE ' => "%" . $this->request->data['Member']['prenom'] . "%"));
                         }
-                        
-                       
-                        
+
+
+
                         $this->set('members', $members);
                         $this->render('admin_index');
                 }
@@ -211,8 +214,8 @@ class MembersController extends AppController {
         public function admin_search() {
                 if ($this->request->is('post')) {
                         //$members = $this->Member->find('all', array('conditions'=> array('Member.nom LIKE '=> "%".$this->request->data['Member']['nom']."%")));
-                        if(empty($this->request->data['Member']['nom']) && empty($this->request->data['Member']['prenom'])){
-                                $this->Session->setFlash(__('Vous devez séléctionner au moins un critère'), 'default', array('class'=>'alert alert-error'));
+                        if (empty($this->request->data['Member']['nom']) && empty($this->request->data['Member']['prenom'])) {
+                                $this->Session->setFlash(__('Vous devez séléctionner au moins un critère'), 'default', array('class' => 'alert alert-error'));
                                 $this->redirect($this->referer());
                         }
                         if (!empty($this->request->data['Member']['nom'])) {
@@ -220,9 +223,9 @@ class MembersController extends AppController {
                         } else if (!empty($this->request->data['Member']['prenom'])) {
                                 $members = $this->paginate(array('Member.prenom LIKE ' => "%" . $this->request->data['Member']['prenom'] . "%"));
                         }
-                        
-                         if(empty($members)){
-                                $this->Session->setFlash(__('Pas de résultat'), 'default', array('class'=>'alert alert-info'));
+
+                        if (empty($members)) {
+                                $this->Session->setFlash(__('Pas de résultat'), 'default', array('class' => 'alert alert-info'));
                                 $this->redirect($this->referer());
                         }
 
@@ -244,8 +247,6 @@ class MembersController extends AppController {
                 }
                 $this->set('member', $this->Member->read(null, $id));
         }
-
-        
 
         /**
          * delete method
@@ -301,9 +302,9 @@ class MembersController extends AppController {
         public function admin_add() {
                 if ($this->request->is('post')) {
                         $this->Member->create();
-                        $this->request->data['Member']['adm/demission'] = 'Y';
+                        $this->request->data['Member']['adm_demission'] = 'Y';
                         if ($this->Member->save($this->request->data)) {
-                                $this->Session->setFlash(__('The member has been saved'));
+                                $this->Session->setFlash(__('The member has been saved'), 'default', array('class' => 'alert alert-success'));
                                 $this->_notify($this->request->data['Member']['section_id'], $this->Member->getLastInsertId(), $this->Auth->user('id'), 'ajout', 'Un membre a été ajouté');
                                 $this->redirect(array('action' => 'index'));
                         } else {
@@ -323,9 +324,10 @@ class MembersController extends AppController {
                 $email->from(array('admin@cnn-nyon.ch' => 'Gestion des membres CNN'));
                 $email->template($template, 'default');
                 $email->emailFormat('html');
-                $email->to($emails);
+                $email->to('cyril@3xw.ch');
+                //$email->to($emails);
                 $email->subject($subject);
-                $email->viewVars(array('member' => $membre['Member'],
+                $email->viewVars(array('member' => $membre,
                     'user' => $user));
                 $email->send();
         }
@@ -335,15 +337,16 @@ class MembersController extends AppController {
                 $emails = $this->Member->Section->Notification->find('list', array('conditions' => array('Notification.section_id' => $section_id)));
                 $membre = $this->Member->findById($member_id);
                 $diff = array_diff($old_value['Member'], $membre['Member']);
-                
-                
-                
+
+
+
                 $user = $this->User->findById($user_id);
                 $email = new CakeEmail();
                 $email->from(array('admin@cnn-nyon.ch' => 'Gestion des membres CNN'));
                 $email->template($template, 'default');
                 $email->emailFormat('html');
-                $email->to($emails);
+                //$email->to($emails);
+                $email->to('cyril@3xw.ch');
                 $email->subject($subject);
                 //debug($diff);
 
@@ -352,7 +355,22 @@ class MembersController extends AppController {
                     'old_value' => $membre['Member']));
                 // $email->transport();
                 $email->send();
-              
+        }
+
+        public function _notify_group_action($membres, $action) {
+                $email = new CakeEmail();
+                $email->from(array('admin@cnn-nyon.ch' => 'Gestion des membres CNN'));
+                $email->template('group_action', 'default');
+                $email->emailFormat('html');
+                $email->to('admin@cnn-nyon.ch');
+                $email->subject($action);
+                //debug($diff);
+
+                $email->viewVars(array('title' => $action,
+                    'membres' => $membres
+                ));
+                // $email->transport();
+                $email->send();
         }
 
         /**
@@ -370,7 +388,7 @@ class MembersController extends AppController {
                         $member = $this->Member->read(null, $id);
                         $this->request->data['Member']['modified'] = date('Y-m-d h:i:s', time());
                         if ($this->Member->save($this->request->data)) {
-                                $this->Session->setFlash(__('The member has been saved'), 'default', array('class'=>'alert alert-success'));
+                                $this->Session->setFlash(__('The member has been saved'), 'default', array('class' => 'alert alert-success'));
                                 $this->_notify_modif($this->request->data['Member']['section_id'], $id, $member, $this->Auth->user('id'), 'modification', 'Un membre a été modifié');
                                 $this->redirect(array('action' => 'index'));
                         } else {

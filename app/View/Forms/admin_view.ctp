@@ -14,6 +14,7 @@
                         </ul>
                 </div>
         </h2>
+        <h3><?php echo h($form['Form']['sub_title']); ?> </h3>
         <dl>
                 <dt><?php echo __('Contact Email'); ?></dt>
                 <dd>
