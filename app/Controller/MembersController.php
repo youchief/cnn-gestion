@@ -12,15 +12,7 @@ class MembersController extends AppController {
         var $components = array('Email');
         var $uses = array('Member', 'User');
 
-        /**
-         * index method
-         *
-         * @return void
-         */
-        public function index() {
-                $this->Member->recursive = 0;
-                $this->set('members', $this->paginate());
-        }
+ 
 
         public function admin_export() {
                 $this->layout = false;
@@ -55,8 +47,8 @@ class MembersController extends AppController {
                 $sheet->setCellValue('N1', 'SEXE');
                 $sheet->setCellValue('O1', 'ENTRE AU CLUB');
                 $sheet->setCellValue('P1', 'SECTION');
-                $sheet->setCellValue('Q1', 'MEMBRE TRIATHLON');
-                $sheet->setCellValue('R1', 'CATEGORIE');
+                $sheet->setCellValue('Q1', 'Groupe');
+                $sheet->setCellValue('R1', 'Niveau natation');
                 $sheet->setCellValue('S1', 'CT');
                 $sheet->setCellValue('T1', 'Adm/Demission');
                 $sheet->setCellValue('U1', 'ARBITRE');
@@ -93,8 +85,8 @@ class MembersController extends AppController {
                         $sheet->setCellValue('N' . $i, $results[$i]['Member']['sexe']);
                         $sheet->setCellValue('O' . $i, date('d-m-Y', strtotime($results[$i]['Member']['entree_club'])));
                         $sheet->setCellValue('P' . $i, $results[$i]['Section']['nom']);
-                        $sheet->setCellValue('Q' . $i, $results[$i]['Member']['mbre_tri']);
-                        $sheet->setCellValue('R' . $i, $results[$i]['Member']['categorie']);
+                        $sheet->setCellValue('Q' . $i, $results[$i]['Member']['groupe']);
+                        $sheet->setCellValue('R' . $i, $results[$i]['Member']['niveau_natation']);
                         $sheet->setCellValue('S' . $i, $results[$i]['Member']['ct']);
                         $sheet->setCellValue('T' . $i, $results[$i]['Member']['adm_demission']);
                         $sheet->setCellValue('U' . $i, $results[$i]['Member']['arbitre']);
@@ -195,21 +187,7 @@ class MembersController extends AppController {
                 $this->set('members', $this->paginate(array('Member.adm_demission' => 'Z')));
         }
 
-        public function search() {
-                if ($this->request->is('post')) {
-                        //$members = $this->Member->find('all', array('conditions'=> array('Member.nom LIKE '=> "%".$this->request->data['Member']['nom']."%")));
-                        if (!empty($this->request->data['Member']['nom'])) {
-                                $members = $this->paginate(array('Member.nom LIKE ' => "%" . $this->request->data['Member']['nom'] . "%"));
-                        } else if (!empty($this->request->data['Member']['prenom'])) {
-                                $members = $this->paginate(array('Member.prenom LIKE ' => "%" . $this->request->data['Member']['prenom'] . "%"));
-                        }
 
-
-
-                        $this->set('members', $members);
-                        $this->render('admin_index');
-                }
-        }
 
         public function admin_search() {
                 if ($this->request->is('post')) {
@@ -234,41 +212,8 @@ class MembersController extends AppController {
                 }
         }
 
-        /**
-         * view method
-         *
-         * @param string $id
-         * @return void
-         */
-        public function view($id = null) {
-                $this->Member->id = $id;
-                if (!$this->Member->exists()) {
-                        throw new NotFoundException(__('Invalid member'));
-                }
-                $this->set('member', $this->Member->read(null, $id));
-        }
-
-        /**
-         * delete method
-         *
-         * @param string $id
-         * @return void
-         */
-        public function delete($id = null) {
-                if (!$this->request->is('post')) {
-                        throw new MethodNotAllowedException();
-                }
-                $this->Member->id = $id;
-                if (!$this->Member->exists()) {
-                        throw new NotFoundException(__('Invalid member'));
-                }
-                if ($this->Member->delete()) {
-                        $this->Session->setFlash(__('Member deleted'));
-                        $this->redirect(array('action' => 'index'));
-                }
-                $this->Session->setFlash(__('Member was not deleted'));
-                $this->redirect(array('action' => 'index'));
-        }
+ 
+      
 
         /**
          * admin_index method
@@ -305,7 +250,7 @@ class MembersController extends AppController {
                         $this->request->data['Member']['adm_demission'] = 'Y';
                         if ($this->Member->save($this->request->data)) {
                                 $this->Session->setFlash(__('The member has been saved'), 'default', array('class' => 'alert alert-success'));
-                                $this->_notify($this->request->data['Member']['section_id'], $this->Member->getLastInsertId(), $this->Auth->user('id'), 'ajout', 'Un membre a été ajouté');
+                                $this->_notify($this->request->data['Member']['section_id'], $this->Member->getLastInsertId(), $this->Auth->user('id'), 'default', 'Un membre a été ajouté');
                                 $this->redirect(array('action' => 'index'));
                         } else {
                                 $this->Session->setFlash(__('The member could not be saved. Please, try again.'));
@@ -324,11 +269,12 @@ class MembersController extends AppController {
                 $email->from(array('admin@cnn-nyon.ch' => 'Gestion des membres CNN'));
                 $email->template($template, 'default');
                 $email->emailFormat('html');
-                $email->to('cyril@3xw.ch');
-                //$email->to($emails);
+                //$email->to('cyril@3xw.ch');
+                $email->to($emails);
                 $email->subject($subject);
                 $email->viewVars(array('member' => $membre,
-                    'user' => $user));
+                    'user' => $user, 
+                    'subject'=>$subject));
                 $email->send();
         }
 
@@ -345,8 +291,8 @@ class MembersController extends AppController {
                 $email->from(array('admin@cnn-nyon.ch' => 'Gestion des membres CNN'));
                 $email->template($template, 'default');
                 $email->emailFormat('html');
-                //$email->to($emails);
-                $email->to('cyril@3xw.ch');
+                $email->to($emails);
+                //$email->to('cyril@3xw.ch');
                 $email->subject($subject);
                 //debug($diff);
 
@@ -415,8 +361,12 @@ class MembersController extends AppController {
                 if (!$this->Member->exists()) {
                         throw new NotFoundException(__('Invalid member'));
                 }
+                $member = $this->Member->findById($id);
+                $this->_notify($member['Member']['section_id'], $member['Member']['id'], $this->Auth->user('id'), 'default', 'Un membre a été effacé');
+              
+                
                 if ($this->Member->delete()) {
-                        $this->Session->setFlash(__('Member deleted'));
+                        $this->Session->setFlash(__('Member deleted'), 'default', array('class'=>'alert alert-success'));
                         $this->redirect(array('action' => 'index'));
                 }
                 $this->Session->setFlash(__('Member was not deleted'));

@@ -25,7 +25,7 @@
                                 <td><?php echo h($member['Member']['sexe']); ?>&nbsp;</td>
                                 <td><?php echo h($member['Member']['entree_club']); ?>&nbsp;</td>
                                 <td><?php echo h($member['Member']['section']); ?>&nbsp;</td>
-                                <td><?php echo h($member['Member']['adm/demission']); ?>&nbsp;</td>
+                                <td><?php echo h($member['Member']['adm_demission']); ?>&nbsp;</td>
                                 <td class="actions">
                                         <?php echo $this->Html->link(__('View'), array('action' => 'view', $member['Member']['id'])); ?>
                                         <?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $member['Member']['id'])); ?>

@@ -29,7 +29,11 @@
                 echo $this->Form->input('email_2');
                 echo $this->Form->input('email_3');
                 echo $this->Form->input('sexe', array('type' => 'select', 'options' => array('' => '-', 'F' => 'F', 'H' => 'H')));
-                echo $this->Form->input('entree_club', array('dateFormat' => 'DMY'));
+                echo $this->Form->input('entree_club', array(
+                    'dateFormat' => 'DMY',
+                    'minYear' => date('Y') - 100,
+                    'maxYear' => date('Y') - 1,
+                ));
                 echo $this->Form->input('section_id');
                 echo $this->Form->input('groupe', array('type' => 'select', 'options' => array('' => '-', 'TRI-Adulte' => 'TRI-Adulte', 'TRI-Ecole' => 'TRI-Ecole', 'WP-Equ1' => 'WP-Equ1', 'WP-Equ2' => 'WP-Equ2', 'WP-U20' => 'WP-U20', 'WP-U17' => 'WP-U17', 'WP-U15' => 'WP-U15', 'WP-Ecole' => 'WP-Ecole', 'WP-EquFille' => 'WP-EquFille', 'NAT-Kids1' => 'NAT-Kids1', 'NAT-Kids2' => 'NAT-Kids2', 'NAT-Futura' => 'NAT-Futura', 'NAT-C1' => 'NAT-C1', 'NAT-C2' => 'NAT-C2', 'NAT-C3' => 'NAT-C3', 'NAT-Master' => 'NAT-Master')));
                 echo $this->Form->input('niveau_natation', array('type' => 'select', 'options' => array('' => '-', 'Evolution' => 'Evolution', 'Intermédiaire' => 'Intermédiaire', 'Performance' => 'Performance', 'Golden League' => 'Golden League')));

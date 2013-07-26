@@ -23,7 +23,9 @@ class SectionsController extends AppController {
                 $this->layout = false;
                 $this->autoRender = false;
                 ini_set('max_execution_time', 1600); //increase max_execution_time to 10 min if data set is very large
-                $results = $this->Section->Member->find('all', array('conditions' => array('Member.section_id' => $section_id)));
+                $results = $this->Section->Member->find('all', array('conditions'=>array('Member.section_id'=>$section_id))); // set the query function
+
+
                 App::import('Vendor', 'PhpExcel', array('file' => 'PhpExcel.php'));
                 $workbook = new PHPExcel;
                 $sheet = $workbook->getActiveSheet();
@@ -32,7 +34,7 @@ class SectionsController extends AppController {
                         'bold' => true,
                     )
                 );
-                $workbook->getActiveSheet()->getStyle('A1:AI1')->applyFromArray($styleArray);
+                $workbook->getActiveSheet()->getStyle('A1:AK1')->applyFromArray($styleArray);
 
                 $sheet->setCellValue('A1', 'TITRE');
                 $sheet->setCellValue('B1', 'NOM');
@@ -50,8 +52,8 @@ class SectionsController extends AppController {
                 $sheet->setCellValue('N1', 'SEXE');
                 $sheet->setCellValue('O1', 'ENTRE AU CLUB');
                 $sheet->setCellValue('P1', 'SECTION');
-                $sheet->setCellValue('Q1', 'MEMBRE TRIATHLON');
-                $sheet->setCellValue('R1', 'CATEGORIE');
+                $sheet->setCellValue('Q1', 'Groupe');
+                $sheet->setCellValue('R1', 'Niveau natation');
                 $sheet->setCellValue('S1', 'CT');
                 $sheet->setCellValue('T1', 'Adm/Demission');
                 $sheet->setCellValue('U1', 'ARBITRE');
@@ -69,6 +71,8 @@ class SectionsController extends AppController {
                 $sheet->setCellValue('AG1', 'SSS');
                 $sheet->setCellValue('AH1', 'JS');
                 $sheet->setCellValue('AI1', 'PROFESSION');
+                $sheet->setCellValue('AJ1', 'CREE');
+                $sheet->setCellValue('AK1', 'MODIFIE');
                 for ($i = 2; $i < count($results); $i++) {
                         $sheet->setCellValue('A' . $i, $results[$i]['Member']['titre']);
                         $sheet->setCellValue('B' . $i, $results[$i]['Member']['nom']);
@@ -86,10 +90,10 @@ class SectionsController extends AppController {
                         $sheet->setCellValue('N' . $i, $results[$i]['Member']['sexe']);
                         $sheet->setCellValue('O' . $i, date('d-m-Y', strtotime($results[$i]['Member']['entree_club'])));
                         $sheet->setCellValue('P' . $i, $results[$i]['Section']['nom']);
-                        $sheet->setCellValue('Q' . $i, $results[$i]['Member']['mbre_tri']);
-                        $sheet->setCellValue('R' . $i, $results[$i]['Member']['categorie']);
+                        $sheet->setCellValue('Q' . $i, $results[$i]['Member']['groupe']);
+                        $sheet->setCellValue('R' . $i, $results[$i]['Member']['niveau_natation']);
                         $sheet->setCellValue('S' . $i, $results[$i]['Member']['ct']);
-                        $sheet->setCellValue('T' . $i, $results[$i]['Member']['adm/demission']);
+                        $sheet->setCellValue('T' . $i, $results[$i]['Member']['adm_demission']);
                         $sheet->setCellValue('U' . $i, $results[$i]['Member']['arbitre']);
                         $sheet->setCellValue('V' . $i, $results[$i]['Member']['licence']);
                         $sheet->setCellValue('W' . $i, $results[$i]['Member']['status']);
@@ -105,11 +109,15 @@ class SectionsController extends AppController {
                         $sheet->setCellValue('AG' . $i, $results[$i]['Member']['sss']);
                         $sheet->setCellValue('AH' . $i, $results[$i]['Member']['js']);
                         $sheet->setCellValue('AI' . $i, $results[$i]['Member']['profession']);
+                        $sheet->setCellValue('AJ' . $i, date('d-m-y h:i', strtotime($results[$i]['Member']['created'])));
+                        $sheet->setCellValue('AK' . $i, date('d-m-y h:i', strtotime($results[$i]['Member']['modified'])));
                 }
                 $writer = new PHPExcel_Writer_Excel2007($workbook);
                 header('Content-type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
                 header('Content-Disposition:inline;filename=export_membres.xlsx ');
-                $writer->save('php://output');
+                if ($writer->save('php://output')) {
+                        $this->Session->setFlash(__('Export télécharger sur votre ordinateur'), 'default', array('class' => 'alert alert-success'));
+                }
                 $workbook->disconnectWorksheets();
                 unset($workbook);
         }

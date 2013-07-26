@@ -38,7 +38,7 @@
                                 <td><?php echo h($member['Member']['ville']); ?>&nbsp;</td>
                                 <td><?php echo h($member['Member']['email']); ?>&nbsp;</td>
                                 <td><?php echo h($member['Member']['sexe']); ?>&nbsp;</td>
-                                <td><?php echo h($member['Member']['section']); ?>&nbsp;</td>
+                                <td><?php echo h($member['Section']['nom_court']); ?>&nbsp;</td>
                                 <td>
                                         <div class="btn-group">
                                                 <?php echo $this->Html->link(__('View'), array('action' => 'view', $member['Member']['id']), array('class' => 'btn')); ?>
@@ -68,5 +68,3 @@
                 </ul>
         </div>
 </div>
-
-

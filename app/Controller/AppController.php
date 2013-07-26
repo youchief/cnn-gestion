@@ -34,12 +34,13 @@ App::uses('Controller', 'Controller');
 class AppController extends Controller {
 
         public $components = array('Auth', 'Session');
-        public $member_actions = "";
+        public $member_actions = array('members/admin_view', 'members/admin_index', 'members/admin_search', 'members/admin_export',
+            'sections/admin_index', 'sections/admin_view', 'sections/admin_export');
 
         public function beforeFilter() {
                 $this->Auth->authenticate = array('Form');
                 $this->Auth->authorize = array('Controller');
-                $this->Auth->allow('getOptions', 'subscription', 'login', 'logout', 'display', 'contact', 'view', 'thanks', 'select', 'add', 'search');
+                $this->Auth->allow('getOptions', 'subscription', 'login', 'logout', 'display', 'contact', 'thanks', 'select');
                 $this->Auth->logoutRedirect = array('controller' => 'users', 'action' => 'login', 'admin' => true);
                 $this->Auth->loginRedirect = array('controller' => 'members', 'action' => 'index', 'admin' => true);
         }
@@ -47,18 +48,19 @@ class AppController extends Controller {
         public function beforeRender() {
                 if ($this->Auth->user('group_id') == 1) {
                         $this->set('menu', 'menu_admin');
-                } else {
+                } else if ($this->Auth->user('group_id') == 2) {
                         $this->set('menu', 'menu_members');
+                }else  {
+                        $this->set('menu', 'menu');
                 }
         }
 
         public function isAuthorized($user = null) {
                 if ($this->Auth->user('group_id') == 1) {
                         return true;
+                } else if ($this->Auth->user('group_id') == 2) {
+                        return in_array($this->params['controller'] . '/' . $this->params['action'], $this->member_actions);
                 }
-//                } else if ($this->Auth->user('group_id') == 2) {
-//                        return in_array($this->params['controller'] . '/' . $this->params['action'], $this->members_actions);
-//                }
                 return false;
         }
 
