@@ -35,7 +35,7 @@ class AppController extends Controller {
 
         public $components = array('Auth', 'Session');
         public $member_actions = array('members/admin_view', 'members/admin_index', 'members/admin_search', 'members/admin_export',
-            'sections/admin_index', 'sections/admin_view', 'sections/admin_export');
+            'sections/admin_index', 'sections/admin_view', 'sections/admin_export', 'forms/admin_index',  'forms/admin_view', 'subscriptions/admin_index_by_form', 'subscriptions/admin_export');
 
         public function beforeFilter() {
                 $this->Auth->authenticate = array('Form');
