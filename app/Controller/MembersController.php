@@ -282,17 +282,21 @@ class MembersController extends AppController {
                 $this->Member->Section->Notification->recursive = -1;
                 $emails = $this->Member->Section->Notification->find('list', array('conditions' => array('Notification.section_id' => $section_id)));
                 $membre = $this->Member->findById($member_id);
-                $diff = array_diff($old_value['Member'], $membre['Member']);
-
-
-
+                
+                $diff = array();
+                foreach( $membre['Member'] as $key => $value ){
+                    if($old_value['Member'][$key] !=   $membre['Member'][$key] ){
+                        $diff[$key] = $old_value['Member'][$key];
+                    }
+                }
+                
                 $user = $this->User->findById($user_id);
                 $email = new CakeEmail();
                 $email->from(array('admin@cnn-nyon.ch' => 'Gestion des membres CNN'));
                 $email->template($template, 'default');
                 $email->emailFormat('html');
                 $email->to($emails);
-                //$email->to('cyril@3xw.ch');
+                //$email->to('antoine@3xw.ch');
                 $email->subject($subject);
                 //debug($diff);
 
@@ -301,6 +305,7 @@ class MembersController extends AppController {
                     'old_value' => $membre['Member']));
                 // $email->transport();
                 $email->send();
+                
         }
 
         public function _notify_group_action($membres, $action) {
