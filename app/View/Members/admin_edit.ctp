@@ -19,7 +19,7 @@
                 echo $this->Form->input('date_de_naissance', array(
                     'dateFormat' => 'DMY',
                     'minYear' => date('Y') - 100,
-                    'maxYear' => date('Y') - 1,
+                    'maxYear' => date('Y') + 4,
                 ));
                 echo $this->Form->input('private_phone');
                 echo $this->Form->input('pro_phone');

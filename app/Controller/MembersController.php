@@ -286,9 +286,21 @@ class MembersController extends AppController {
                 $diff = array();
                 foreach( $membre['Member'] as $key => $value ){
                     if($old_value['Member'][$key] !=   $membre['Member'][$key] ){
-                        $diff[$key] = $old_value['Member'][$key];
+                        if( $key == 'section_id' ){
+                            $diff['section'] = $old_value['Section']['nom'];
+                            $membre['Member']['section'] = $membre['Section']['nom'];
+                        }else{
+                            $diff[$key] = $old_value['Member'][$key];
+                        }
                     }
                 }
+                /*
+                debug( $membre );
+                
+                debug( $old_value );
+                
+                debug( $diff );
+                */
                 
                 $user = $this->User->findById($user_id);
                 $email = new CakeEmail();
@@ -341,7 +353,7 @@ class MembersController extends AppController {
                         if ($this->Member->save($this->request->data)) {
                                 $this->Session->setFlash(__('The member has been saved'), 'default', array('class' => 'alert alert-success'));
                                 $this->_notify_modif($this->request->data['Member']['section_id'], $id, $member, $this->Auth->user('id'), 'modification', 'Un membre a été modifié');
-                                $this->redirect(array('action' => 'index'));
+                                //$this->redirect(array('action' => 'index'));
                         } else {
                                 $this->Session->setFlash(__('The member could not be saved. Please, try again.'));
                         }
