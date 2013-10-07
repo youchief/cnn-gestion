@@ -1,5 +1,5 @@
 <h1><?php echo $subject." par ".$user['User']['username'] ?></h1>
-<h2><?php echo h($member['Member']['titre'] . " " . $member['Member']['nom'] ." ".$member['Member']['nom']); ?></h2>
+<h2><?php echo h($member['Member']['titre'] . " " . $member['Member']['nom'] ." ".$member['Member']['prenom']); ?></h2>
 <dl>
         <dt><?php echo __('Section'); ?></dt>
         <dd>

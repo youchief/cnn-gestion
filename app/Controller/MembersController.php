@@ -314,6 +314,7 @@ class MembersController extends AppController {
 
                 $email->viewVars(array('member' => $diff,
                     'user' => $user,
+                    'section' => $membre['Section']['nom'], 
                     'old_value' => $membre['Member']));
                 // $email->transport();
                 $email->send();

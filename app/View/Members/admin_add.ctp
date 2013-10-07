@@ -48,6 +48,7 @@
                 echo $this->Form->input('moniteur');
                 echo $this->Form->input('entraineur');
                 echo $this->Form->input('en_test');
+                echo $this->Form->input('sans_cotisation', array('type' => 'checkbox'));
                 echo $this->Form->input('delai', array('dateFormat' => 'DMY', 'empty' => '--select--', 'label' => 'Sans cotisation jusqu\'au'));
                 echo $this->Form->input('avs');
                 echo $this->Form->input('sss');
