@@ -157,7 +157,11 @@
                 </dd>
                 <dt><?php echo __('Delai'); ?></dt>
                 <dd>
-                        <?php echo date('d-m-Y', strtotime($member['Member']['delai'])); ?>
+                        <?php
+                        if(!empty($member['Member']['delai'])){
+                                echo $this->Time->format('d-m-y',$member['Member']['delai']); 
+                        }
+                         ?>
                         &nbsp;
                 </dd>
                 <dt><?php echo __('Avs'); ?></dt>
@@ -170,9 +174,28 @@
                         <?php echo h($member['Member']['sss']); ?>
                         &nbsp;
                 </dd>
+                <dt><?php echo __('Validité SSS'); ?></dt>
+                <dd>
+                        <?php
+                        if(!empty($member['Member']['validite_sss'])){
+                                echo $this->Time->format('d-m-y',$member['Member']['validite_sss']); 
+                        }
+                         ?>
+                        &nbsp;
+                </dd>
                 <dt><?php echo __('JS'); ?></dt>
                 <dd>
                         <?php echo h($member['Member']['js']); ?>
+                        &nbsp;
+                </dd>
+                <dt><?php echo __('Validité JS'); ?></dt>
+                <dd>
+                        <?php
+                        if(!empty($member['Member']['validite_js'])){
+                                echo $this->Time->format('d-m-y',$member['Member']['validite_js']); 
+                        }
+                         ?>
+                        
                         &nbsp;
                 </dd>
                 <dt><?php echo __('Commentaires'); ?></dt>

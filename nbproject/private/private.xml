@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/Users/cyril/Sites/cnn-gestion/app/View/Members/admin_add.ctp</file>
+        <file>file:/Users/cyril/Sites/cnn-gestion/app/View/Members/admin_edit.ctp</file>
+        <file>file:/Users/cyril/Sites/cnn-gestion/app/Config/database.php</file>
+        <file>file:/Users/cyril/Sites/cnn-gestion/app/Controller/MembersController.php</file>
+        <file>file:/Users/cyril/Sites/cnn-gestion/app/View/Members/view.ctp</file>
+        <file>file:/Users/cyril/Sites/cnn-gestion/app/View/Members/admin_view.ctp</file>
+        <file>file:/Users/cyril/Sites/cnn-gestion/app/Controller/SectionsController.php</file>
+        <file>file:/Users/cyril/Sites/cnn-gestion/app/Controller/SubscriptionsController.php</file>
+        <file>file:/Users/cyril/Sites/cnn-gestion/app/Controller/GroupsController.php</file>
+    </open-files>
 </project-private>

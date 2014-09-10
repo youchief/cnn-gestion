@@ -9,7 +9,7 @@ class DATABASE_CONFIG {
             //'port' => ':/Applications/MAMP/tmp/mysql/mysql.sock',
             'login' => 'root',
             'password' => 'root',
-            'database' => 'bonbonn_cnngest',
+            'database' => 'cnn',
             'schema' => '',
             'prefix' => '',
             'encoding' => 'utf8'

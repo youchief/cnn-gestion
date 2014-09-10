@@ -11,16 +11,14 @@ class MembersController extends AppController {
 
         var $components = array('Email');
         var $uses = array('Member', 'User');
-
- 
+        var $helpers = array('Time');
 
         public function admin_export() {
                 $this->layout = false;
                 $this->autoRender = false;
                 ini_set('max_execution_time', 1600); //increase max_execution_time to 10 min if data set is very large
                 $results = $this->Member->find('all', array()); // set the query function
-
-
+                //debug($results);
                 App::import('Vendor', 'PhpExcel', array('file' => 'PhpExcel.php'));
                 $workbook = new PHPExcel;
                 $sheet = $workbook->getActiveSheet();
@@ -29,7 +27,7 @@ class MembersController extends AppController {
                         'bold' => true,
                     )
                 );
-                $workbook->getActiveSheet()->getStyle('A1:AK1')->applyFromArray($styleArray);
+                $workbook->getActiveSheet()->getStyle('A1:AN1')->applyFromArray($styleArray);
 
                 $sheet->setCellValue('A1', 'TITRE');
                 $sheet->setCellValue('B1', 'NOM');
@@ -64,48 +62,57 @@ class MembersController extends AppController {
                 $sheet->setCellValue('AE1', 'DELAI');
                 $sheet->setCellValue('AF1', 'AVS');
                 $sheet->setCellValue('AG1', 'SSS');
-                $sheet->setCellValue('AH1', 'JS');
-                $sheet->setCellValue('AI1', 'PROFESSION');
-                $sheet->setCellValue('AJ1', 'CREE');
-                $sheet->setCellValue('AK1', 'MODIFIE');
-                for ($i = 2; $i < count($results); $i++) {
-                        $sheet->setCellValue('A' . $i, $results[$i]['Member']['titre']);
-                        $sheet->setCellValue('B' . $i, $results[$i]['Member']['nom']);
-                        $sheet->setCellValue('C' . $i, $results[$i]['Member']['prenom']);
-                        $sheet->setCellValue('D' . $i, $results[$i]['Member']['adresse']);
-                        $sheet->setCellValue('E' . $i, $results[$i]['Member']['npa']);
-                        $sheet->setCellValue('F' . $i, $results[$i]['Member']['ville']);
-                        $sheet->setCellValue('G' . $i, date('d-m-Y', strtotime($results[$i]['Member']['date_de_naissance'])));
-                        $sheet->setCellValue('H' . $i, $results[$i]['Member']['private_phone']);
-                        $sheet->setCellValue('I' . $i, $results[$i]['Member']['pro_phone']);
-                        $sheet->setCellValue('J' . $i, $results[$i]['Member']['mobile_phone']);
-                        $sheet->setCellValue('K' . $i, $results[$i]['Member']['email']);
-                        $sheet->setCellValue('L' . $i, $results[$i]['Member']['email_2']);
-                        $sheet->setCellValue('M' . $i, $results[$i]['Member']['email_3']);
-                        $sheet->setCellValue('N' . $i, $results[$i]['Member']['sexe']);
-                        $sheet->setCellValue('O' . $i, date('d-m-Y', strtotime($results[$i]['Member']['entree_club'])));
-                        $sheet->setCellValue('P' . $i, $results[$i]['Section']['nom']);
-                        $sheet->setCellValue('Q' . $i, $results[$i]['Member']['groupe']);
-                        $sheet->setCellValue('R' . $i, $results[$i]['Member']['niveau_natation']);
-                        $sheet->setCellValue('S' . $i, $results[$i]['Member']['ct']);
-                        $sheet->setCellValue('T' . $i, $results[$i]['Member']['adm_demission']);
-                        $sheet->setCellValue('U' . $i, $results[$i]['Member']['arbitre']);
-                        $sheet->setCellValue('V' . $i, $results[$i]['Member']['licence']);
-                        $sheet->setCellValue('W' . $i, $results[$i]['Member']['status']);
-                        $sheet->setCellValue('X' . $i, $results[$i]['Member']['comite']);
-                        $sheet->setCellValue('Y' . $i, $results[$i]['Member']['ancien_comite']);
-                        $sheet->setCellValue('Z' . $i, $results[$i]['Member']['en_conge']);
-                        $sheet->setCellValue('AA' . $i, $results[$i]['Member']['moniteur']);
-                        $sheet->setCellValue('AB' . $i, $results[$i]['Member']['entraineur']);
-                        $sheet->setCellValue('AC' . $i, $results[$i]['Member']['en_test']);
-                        $sheet->setCellValue('AD' . $i, $results[$i]['Member']['sans_cotisation']);
-                        $sheet->setCellValue('AE' . $i, date('d-m-Y', strtotime($results[$i]['Member']['delai'])));
-                        $sheet->setCellValue('AF' . $i, $results[$i]['Member']['avs']);
-                        $sheet->setCellValue('AG' . $i, $results[$i]['Member']['sss']);
-                        $sheet->setCellValue('AH' . $i, $results[$i]['Member']['js']);
-                        $sheet->setCellValue('AI' . $i, $results[$i]['Member']['profession']);
-                        $sheet->setCellValue('AJ' . $i, date('d-m-y h:i', strtotime($results[$i]['Member']['created'])));
-                        $sheet->setCellValue('AK' . $i, date('d-m-y h:i', strtotime($results[$i]['Member']['modified'])));
+                $sheet->setCellValue('AH1', 'VALIDITE SSS');
+                $sheet->setCellValue('AI1', 'JS');
+                $sheet->setCellValue('AJ1', 'VALIDITE JS');
+                $sheet->setCellValue('AK1', 'PROFESSION');
+                $sheet->setCellValue('AL1', 'CREE');
+                $sheet->setCellValue('AM1', 'MODIFIE');
+                $sheet->setCellValue('AN1', 'REMARQUE');
+                //debug(count($results));
+                $y = 1;
+                for ($i = 0; $i < count($results); $i++) {
+                        $y++;
+                        $sheet->setCellValue('A' . $y, $results[$i]['Member']['titre']);
+                        $sheet->setCellValue('B' . $y, $results[$i]['Member']['nom']);
+                        $sheet->setCellValue('C' . $y, $results[$i]['Member']['prenom']);
+                        $sheet->setCellValue('D' . $y, $results[$i]['Member']['adresse']);
+                        $sheet->setCellValue('E' . $y, $results[$i]['Member']['npa']);
+                        $sheet->setCellValue('F' . $y, $results[$i]['Member']['ville']);
+                        $sheet->setCellValue('G' . $y, date('d-m-Y', strtotime($results[$i]['Member']['date_de_naissance'])));
+                        $sheet->setCellValue('H' . $y, $results[$i]['Member']['private_phone']);
+                        $sheet->setCellValue('I' . $y, $results[$i]['Member']['pro_phone']);
+                        $sheet->setCellValue('J' . $y, $results[$i]['Member']['mobile_phone']);
+                        $sheet->setCellValue('K' . $y, $results[$i]['Member']['email']);
+                        $sheet->setCellValue('L' . $y, $results[$i]['Member']['email_2']);
+                        $sheet->setCellValue('M' . $y, $results[$i]['Member']['email_3']);
+                        $sheet->setCellValue('N' . $y, $results[$i]['Member']['sexe']);
+                        $sheet->setCellValue('O' . $y, date('d-m-Y', strtotime($results[$i]['Member']['entree_club'])));
+                        $sheet->setCellValue('P' . $y, $results[$i]['Section']['nom']);
+                        $sheet->setCellValue('Q' . $y, $results[$i]['Member']['groupe']);
+                        $sheet->setCellValue('R' . $y, $results[$i]['Member']['niveau_natation']);
+                        $sheet->setCellValue('S' . $y, $results[$i]['Member']['ct']);
+                        $sheet->setCellValue('T' . $y, $results[$i]['Member']['adm_demission']);
+                        $sheet->setCellValue('U' . $y, $results[$i]['Member']['arbitre']);
+                        $sheet->setCellValue('V' . $y, $results[$i]['Member']['licence']);
+                        $sheet->setCellValue('W' . $y, $results[$i]['Member']['status']);
+                        $sheet->setCellValue('X' . $y, $results[$i]['Member']['comite']);
+                        $sheet->setCellValue('Y' . $y, $results[$i]['Member']['ancien_comite']);
+                        $sheet->setCellValue('Z' . $y, $results[$i]['Member']['en_conge']);
+                        $sheet->setCellValue('AA' . $y, $results[$i]['Member']['moniteur']);
+                        $sheet->setCellValue('AB' . $y, $results[$i]['Member']['entraineur']);
+                        $sheet->setCellValue('AC' . $y, $results[$i]['Member']['en_test']);
+                        $sheet->setCellValue('AD' . $y, $results[$i]['Member']['sans_cotisation']);
+                        $sheet->setCellValue('AE' . $y, date('d-m-Y', strtotime($results[$i]['Member']['delai'])));
+                        $sheet->setCellValue('AF' . $y, $results[$i]['Member']['avs']);
+                        $sheet->setCellValue('AG' . $y, $results[$i]['Member']['sss']);
+                        $sheet->setCellValue('AH' . $y, $results[$i]['Member']['validite_sss']);
+                        $sheet->setCellValue('AI' . $y, $results[$i]['Member']['js']);
+                        $sheet->setCellValue('AJ' . $y, $results[$i]['Member']['validite_js']);
+                        $sheet->setCellValue('AK' . $y, $results[$i]['Member']['profession']);
+                        $sheet->setCellValue('AL' . $y, date('d-m-y h:i', strtotime($results[$i]['Member']['created'])));
+                        $sheet->setCellValue('AM' . $y, date('d-m-y h:i', strtotime($results[$i]['Member']['modified'])));
+                        $sheet->setCellValue('AN' . $y, $results[$i]['Member']['comment']);
                 }
                 $writer = new PHPExcel_Writer_Excel2007($workbook);
                 header('Content-type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
@@ -167,7 +174,7 @@ class MembersController extends AppController {
                         $this->Member->saveField('adm_demission', '');
                 }
                 $this->_notify_group_action($members, 'Admissions validées');
-                $this->Session->setFlash(__('Vous avez validé les admissions'), 'default', array('class'=>'alert alert-success'));
+                $this->Session->setFlash(__('Vous avez validé les admissions'), 'default', array('class' => 'alert alert-success'));
                 $this->redirect(array('action' => 'index'));
         }
 
@@ -178,7 +185,7 @@ class MembersController extends AppController {
                         $this->Member->delete();
                 }
                 $this->_notify_group_action($members, 'Membres supprimés');
-                $this->Session->setFlash(__('Vous avez effacer les démissions'), 'default', array('class'=>'alert alert-success'));
+                $this->Session->setFlash(__('Vous avez effacer les démissions'), 'default', array('class' => 'alert alert-success'));
                 $this->redirect(array('action' => 'index'));
         }
 
@@ -186,8 +193,6 @@ class MembersController extends AppController {
                 $this->Member->recursive = 0;
                 $this->set('members', $this->paginate(array('Member.adm_demission' => 'Z')));
         }
-
-
 
         public function admin_search() {
                 if ($this->request->is('post')) {
@@ -211,9 +216,6 @@ class MembersController extends AppController {
                         $this->render('admin_index');
                 }
         }
-
- 
-      
 
         /**
          * admin_index method
@@ -273,8 +275,8 @@ class MembersController extends AppController {
                 $email->to($emails);
                 $email->subject($subject);
                 $email->viewVars(array('member' => $membre,
-                    'user' => $user, 
-                    'subject'=>$subject));
+                    'user' => $user,
+                    'subject' => $subject));
                 $email->send();
         }
 
@@ -282,43 +284,36 @@ class MembersController extends AppController {
                 $this->Member->Section->Notification->recursive = -1;
                 $emails = $this->Member->Section->Notification->find('list', array('conditions' => array('Notification.section_id' => $section_id)));
                 $membre = $this->Member->findById($member_id);
-                
+
                 $diff = array();
-                foreach( $membre['Member'] as $key => $value ){
-                    if($old_value['Member'][$key] !=   $membre['Member'][$key] ){
-                        if( $key == 'section_id' ){
-                            $diff['section'] = $old_value['Section']['nom'];
-                            $membre['Member']['section'] = $membre['Section']['nom'];
-                        }else{
-                            $diff[$key] = $old_value['Member'][$key];
+                foreach ($membre['Member'] as $key => $value) {
+                        if ($old_value['Member'][$key] != $membre['Member'][$key]) {
+                                if ($key == 'section_id') {
+                                        $diff['section'] = $old_value['Section']['nom'];
+                                        $membre['Member']['section'] = $membre['Section']['nom'];
+                                } else {
+                                        $diff[$key] = $old_value['Member'][$key];
+                                }
                         }
-                    }
                 }
-                /*
-                debug( $membre );
-                
-                debug( $old_value );
-                
-                debug( $diff );
-                */
-                
+
+
                 $user = $this->User->findById($user_id);
                 $email = new CakeEmail();
                 $email->from(array('admin@cnn-nyon.ch' => 'Gestion des membres CNN'));
                 $email->template($template, 'default');
                 $email->emailFormat('html');
                 $email->to($emails);
-                //$email->to('antoine@3xw.ch');
-                $email->subject($subject);
+                //$email->to('cyril@3xw.ch');
+                $email->subject($subject); 
                 //debug($diff);
 
                 $email->viewVars(array('member' => $diff,
                     'user' => $user,
-                    'section' => $membre['Section']['nom'], 
+                    'section' => $membre['Section']['nom'],
                     'old_value' => $membre['Member']));
                 // $email->transport();
                 $email->send();
-                
         }
 
         public function _notify_group_action($membres, $action) {
@@ -381,10 +376,10 @@ class MembersController extends AppController {
                 }
                 $member = $this->Member->findById($id);
                 $this->_notify($member['Member']['section_id'], $member['Member']['id'], $this->Auth->user('id'), 'default', 'Un membre a été effacé');
-              
-                
+
+
                 if ($this->Member->delete()) {
-                        $this->Session->setFlash(__('Member deleted'), 'default', array('class'=>'alert alert-success'));
+                        $this->Session->setFlash(__('Member deleted'), 'default', array('class' => 'alert alert-success'));
                         $this->redirect(array('action' => 'index'));
                 }
                 $this->Session->setFlash(__('Member was not deleted'));

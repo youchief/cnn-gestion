@@ -52,7 +52,9 @@
                 echo $this->Form->input('delai', array('dateFormat' => 'DMY', 'empty' => '--select--', 'label' => 'Sans cotisation jusqu\'au'));
                 echo $this->Form->input('avs');
                 echo $this->Form->input('sss');
+                echo $this->Form->input('validite_sss', array('dateFormat' => 'DMY', 'empty' => '--select--', 'label' => 'Validité SSS'));
                 echo $this->Form->input('js');
+                echo $this->Form->input('validite_js',  array('dateFormat' => 'DMY', 'empty' => '--select--', 'label' => 'Validité JS'));
                 echo $this->Form->input('comment', array('label' => 'Commentaires'));
                 ?>
         </fieldset>
